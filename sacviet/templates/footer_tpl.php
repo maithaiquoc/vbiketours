@@ -1,0 +1,1 @@
+<strong>© 2014 Copyright by Vbike</strong>
