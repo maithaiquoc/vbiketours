@@ -1,0 +1,54 @@
+.ja-home .ja-cssmenu{background:url(../../images/mainnav-sep.gif) no-repeat bottom right;}
+.ja-cssmenu{float:right;margin:0;padding:0;position:relative;}
+#ja-cssmenu ul{margin:0;padding:0;}
+#ja-cssmenu li{float:left;margin:0;padding:0 0 0 1px;cursor:pointer;}
+#ja-cssmenu li ul{width:16.4em;position:absolute;z-index:99;left:-999em;height:auto;width:15.9em;}
+#ja-cssmenu li ul ul{margin:-2em 0 0 14em;}
+#ja-cssmenu li li{padding:0 1em 0 0;margin:0;width:14.9em;}
+#ja-cssmenu ul a{width:14.8em;width:10.8em;}
+#ja-cssmenu li:hover ul ul, #ja-cssmenu li:hover ul ul ul,
+#ja-cssmenu li.sfhover ul ul, #ja-cssmenu li.havechildsfhover ul ul, #ja-cssmenu li.havechild-activesfhover ul ul, #ja-cssmenu li.activesfhover ul ul,
+#ja-cssmenu li.sfhover ul ul ul, #ja-cssmenu li.havechildsfhover ul ul ul, #ja-cssmenu li.havechild-activesfhover ul ul ul, #ja-cssmenu li.activesfhover ul ul ul{left:-999em;}
+#ja-cssmenu li:hover ul, #ja-cssmenu li li:hover ul, #ja-cssmenu li li li:hover ul,
+#ja-cssmenu li.sfhover ul, #ja-cssmenu li.havechildsfhover ul, #ja-cssmenu li.havechild-activesfhover ul, #ja-cssmenu li.activesfhover ul,
+#ja-cssmenu li li.sfhover ul, #ja-cssmenu li li.havesubchildsfhover ul, #ja-cssmenu li li.havesubchild-activesfhover ul, #ja-cssmenu li li.activesfhover ul,
+#ja-cssmenu li li li.sfhover ul, #ja-cssmenu li li li.havesubchildsfhover ul, #ja-cssmenu li li li.havesubchild-activesfhover ul, #ja-cssmenu li li li.activesfhover ul{left:auto;}
+#ja-cssmenu li a{}
+#ja-cssmenu li a:hover,
+#ja-cssmenu li a:active,
+#ja-cssmenu li a:focus,
+#ja-cssmenu li a.sfhover{color:#890;}
+#ja-cssmenu li:hover,
+#ja-cssmenu li.sfhover,
+#ja-cssmenu li.havechildsfhover,
+#ja-cssmenu li.havechild-activesfhover{}
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus{}
+#ja-cssmenu li ul{background:url(../../images/mainnav-grad.gif) repeat-x bottom left #202020;border:1px solid #2a2a2a;padding:10px 20px 25px;text-align:left;margin-top:-1px;border-radius:0 0 5px 5px;}
+#ja-cssmenu li ul ul{border-top:1px solid #2a2a2a;border-radius:5px;}
+#ja-cssmenu li ul li{border:0 !important;background:url(../../images/line-sep.gif) no-repeat bottom center;margin:0;}
+#ja-cssmenu li ul a{border:0 !important;padding:8px 0 8px 20px;width:170px;background:url(../../images/bullet3.gif) no-repeat left center;color:#c5c5c5;line-height:normal;font-weight:normal;font-size:100%;text-shadow:none !important;}
+#ja-cssmenu li ul a.first-item{border-top:none;}
+#ja-cssmenu li.havesubchild a.haschild span.menu-title,
+#ja-cssmenu li.havesubchildsfhover a.haschild span.menu-title,
+#ja-cssmenu li.havesubchild-active a.haschild span.menu-title{display:block;background:url(../../images/arrow-01.gif) no-repeat 101% 5px;}
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus,
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover{color:#fff;}
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus{background:url(../../images/bullet4.gif) no-repeat left center;color:#890;}
+#ja-cssmenu ul li a.active,
+#ja-cssmenu ul li a.active:hover,
+#ja-cssmenu ul li a.active:active,
+#ja-cssmenu ul li a.active:focus{background:url(../../images/bullet4.gif) no-repeat left center !important;color:#890;}

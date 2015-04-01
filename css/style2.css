@@ -1,0 +1,299 @@
+/* CSS Document */
+body{
+	margin:auto;
+	padding:0px;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#header{
+	width:100%;
+	height:372px;
+	background:url(../img/header.jpg) no-repeat;
+	background-position:center;
+}
+#menu{
+	width:100%;
+	height:35px;
+	background:url(../img/menu.png) repeat-x;
+}
+#nav{
+	width:100%;
+	height:44px;
+	background:url(../img/nav.png) repeat-x;
+}
+#content{
+	width:100%;
+	min-height:500px;
+	background:url(../img/bg.png) no-repeat;
+	background-position:center;
+	background-position:top;
+}
+#content .leaf{
+	margin:auto;
+	margin-top:-5px;
+	width:1194px;
+	height:1388px;
+	background:url(../img/leaf.png) no-repeat;
+	background-position:center;
+}
+#content .leaf .left{
+	float:left;
+	width:560px;
+	height:264px;
+	margin:24px 0 0 75px;
+	background:#FF0;
+}
+#content .leaf .sv{
+	background:url(../img/sv.png) no-repeat;
+	width:146px;
+	height:56px;
+	position:absolute;
+	margin: 20px 0 0 4px;
+	z-index:999;
+
+	
+}
+#content .leaf .right{
+	float:right;
+	width:340px;
+	height:2430px;
+	margin:27px 113px 0 0;
+}
+
+#content .leaf .leftb{
+	float:left;
+	width:630px;
+	height:1220px;
+	margin:0px 0 0 56px;
+}
+#footer{
+	width:100%;
+	height:600px;
+	background:url(../img/foot.png) no-repeat;
+	background-position:center;
+}
+a{
+	text-decoration:none;
+}
+.menutop{
+	width:1050px;
+	margin:auto;
+}
+.menutop a{
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+	margin:13px 15px 5px 0 ;
+	float:left;
+	
+}
+.textfe{
+	border-radius:10px;
+	border:1px solid #CCC;
+}
+.button{
+	height:22px;
+	background:url(../img/button.png) repeat-x;
+	padding:2px 5px;
+	border-radius:5px;
+	border:1px solid #abc079;
+	font-weight:600;
+	color:#333;
+	text-shadow: 1px 1px  #f1f1f1, -1px -1px   #ccc;
+	font-size:12px;
+}
+.ctr{
+	clear:both;
+}
+h1{
+	font-size:12px;
+	color:#8ebf3e;
+
+}
+h2{
+	font-size:15px;
+	color:#8ebf3e;
+
+}
+h3{
+	font-size:12px;
+	color:#8ebf3e;
+
+}
+a:link{
+	text-decoration:none;
+	color:#8ebf3e;
+}
+a:visited{
+	text-decoration:none;
+	color:#8ebf3e;
+}
+.date{
+	font-size:11px;
+	color:#868686;
+	margin:auto;
+}
+.new-right{
+	list-style-type:none;
+	margin:auto;
+	padding:0;
+	height:
+}
+.new-right h3{
+	margin:0;
+}
+.new-right li{
+	padding:10px 0;
+	border-top:1px solid #CCC;
+	height:80px;
+}
+.new-right img{
+	width:80px;
+	height:80px;
+	float:left;
+	margin:3px 5px 5px 0;
+}
+.blog-right li{
+	padding:15px 0;
+}
+.blog-right img{
+	width:80px;
+	height:80px;
+	float:left;
+	margin:0px 10px 5px 0;
+}
+.blog-right{
+	list-style-type:none;
+	margin:auto;
+	padding:0;
+}
+.des_blog{
+	margin:25px 0px 0px 0px;
+}
+.des_new{
+	margin:auto;
+	}
+.new{
+	height:682px	
+}
+.box_facebook
+{
+	
+}
+.new_blog
+{
+	height:330px;
+	}
+	
+#id_2{
+	width:570px;
+	height:880px;
+	margin:auto;
+	float:left;
+	padding-left:63px;
+}
+
+#frame_one_pro{
+	width:186px;
+	margin:auto;
+	float:left;
+}
+.image_pro
+{
+	height:155px;
+	width:186px;
+	padding-left:0px;
+}
+.info_detail_pro
+{
+	text-align:left;
+	font:Arial;
+	font-size:12px;
+	color:#909090;
+	height:46px;
+	width:186px;
+}
+.name_pro
+{
+	text-align:left;
+	font:Myriad Pro;
+	font-size:16px;
+	font-weight:bold;
+	color:#302f41;
+	height:24px;
+	width:186px;
+}
+.price_pro
+{
+	text-align:left;
+	font:Myriad Pro;
+	font-size:18px;
+	font-weight:bold;
+	color:#f82722;
+	float:left;
+}
+.btn_buy
+{
+	height:24px;
+	float:left;
+	width:50px;
+	padding-left:15px;
+	cursor: pointer;
+}
+#id_1{
+	width:570px;
+	margin:auto;
+	padding-left:63px;
+	padding-top:40px;
+}
+.headline_sp
+{
+	text-align:left;
+	font:Myriad Pro;
+	font-size:18px;
+	font-weight:bold;
+	color:#8ebf3e;
+	height:40px;
+	float:left;
+	margin-top: 20px
+}
+.search {
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	border-radius:10px;
+    border: 1px solid rgb(179, 179, 179);
+    margin-top:25px;
+    white-space: nowrap;
+    width:172px;
+	float:right;
+}
+.search .search_keyword {
+    background: none repeat scroll 0% 0% transparent;
+    border: medium none;
+    float: left;
+    font-size: 11px;
+    padding: 0px 5px;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+	font-style:italic;
+}
+.search .submit {
+    float: left;
+}
+.picture {
+	height:360px;
+}
+.picture_right li{
+	padding:5px 0;
+}
+.picture_right img{
+	width:80px;
+	height:80px;
+	float:left;
+	margin:auto;
+}
+.picture_right{
+	list-style-type:none;
+	margin:auto;
+	padding:0;
+}
