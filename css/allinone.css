@@ -934,9 +934,9 @@ img.book_tours{border:4px solid #fff;margin-bottom:10px;box-shadow:0px 0px 8px #
 .book-main{clear:both !important;}
 div.moduletable_see_our_tours h3{font-size:135%;margin:0 !important;padding:0 !important;}
 div.moduletable_see_our_tours{margin-top:66px;}
-div.moduletable_see_our_tours div.ja-slidenews-item img{margin-bottom: 10px;
-width: 210px;height: 156px;}
-div.ja-slidenews-item a.img-wrap {display:block;overflow:hidden;width:220px;height:166px;padding:4px;border:solid 1px #CCC;box-shadow:0 0 5px #CCC;}
+div.moduletable_see_our_tours div.ja-slidenews-item img{margin: 10px 0 10px 0;
+width: 100%;height: 100%}
+div.ja-slidenews-item a.img-wrap {display:block;overflow:hidden;width:100%;height:100%;padding:4px;border:solid 1px #CCC;box-shadow:0 0 5px #CCC;}
 div.ja-slidenews-item a.ja-title{font-size:16pt;text-align:center;padding-top: 5px;}
 div.moduletable_see_our_tours a:hover,
 div.moduletable_see_our_tours a:focus,
