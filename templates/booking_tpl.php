@@ -1032,6 +1032,7 @@
         </div>
 	</div>
 	</div>
+  <?php include("checkout/paypal.php"); ?>
   <div>
       <form id="payPalForm" action = "https://www.sandbox.paypal.com/cgi-bin/webscr" method = "post" target="_blank">
           <input type="hidden" id="item_number" name="item_number" value="">
@@ -1039,8 +1040,8 @@
           <input type="hidden" name="no_note" value="1">
           <input type="hidden" name="business" value="maithaiquoc@gmail.com">
           <input type="hidden" name="currency_code" value="USD">
-          <input type="hidden" name="return" value="<?php echo $config_url ?>/success.php">
-          <input type="hidden" name="cancel" value="index.html">
+          <input type="hidden" name="return" value="<?php echo $config_url ?>/booking-now.html">
+          <input type="hidden" name="cancel" value="<?php echo $config_url ?>/booking-now.html">
           <input name="item_name" type="hidden" id="item_name" value="Check out for booking on vbiketours.com" size="45">
           <input name="amount" type="hidden" id="amount" value="" size="45">
       </form>
@@ -1115,56 +1116,56 @@
     }
 
     $('#Review').click(function(){
-        var total = setTotalPrice(1);
+//        var total = setTotalPrice(1);
         $('#payPalForm').submit();
-        var tName = "";
-        for(var i = 0; i < myArr.length; i++){
-                tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people), ";
-        }
-        //check chosen tours
-        if(total == 0){
-            alert("Please choose at least a tour...");
-        }
-        else{
-            var title = $('#Title').val();
-            var firstName = $('#FirstName').val();
-            var lastName = $('#LastName').val();
-            var emailAddress = $('#EmailAddress').val();
-            var reEmailAddress = $('#ReEmailAddress').val();
-            var nationality = $('#Country').val();
-            var phoneNumber = $('#PhoneNumber').val();
-            var hotelName = $('#HotelName').val();
-            var hotelAddress = $('#HotelAddress').val();
-            var roomNumber = $('#RoomNumber').val();
-            var message = $('#Message').val();
-
-            if(title == '' || firstName == '' || lastName == '' || emailAddress == '' || reEmailAddress == '' || nationality == '' || phoneNumber == '' || hotelName == '' || hotelAddress == ''){
-                alert("The information with (*) symbol is required !");
-            }
-            else{
-                if(emailAddress != reEmailAddress){
-                    alert("Re-enter your email is not match !");
-                }
-                else{
-                    if(!$('#Payment0').is(':checked') && !$('#Payment1').is(':checked')){
-                        alert("Please choose a payment method...");
-                    }
-                    else{
-                        var method = "Paypal payment";
-                        if($('#Payment0').is(':checked')){
-                            method = "Direct payment";
-                        }
-
-                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber
-                            +"&hotelName="+hotelName+"&hotelAddress="+hotelAddress+"&roomNumber="+roomNumber+"&method="+method+"&additional-comments="+message+"&tours="+tName.substring(0,tName.length-2)+"&total="+total;
-
-                        if($('#Payment0').is(':checked')){
-                            sendMail(dataString);
-                        }
-                    }
-                }
-            }
-        }
+//        var tName = "";
+//        for(var i = 0; i < myArr.length; i++){
+//                tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people), ";
+//        }
+//        //check chosen tours
+//        if(total == 0){
+//            alert("Please choose at least a tour...");
+//        }
+//        else{
+//            var title = $('#Title').val();
+//            var firstName = $('#FirstName').val();
+//            var lastName = $('#LastName').val();
+//            var emailAddress = $('#EmailAddress').val();
+//            var reEmailAddress = $('#ReEmailAddress').val();
+//            var nationality = $('#Country').val();
+//            var phoneNumber = $('#PhoneNumber').val();
+//            var hotelName = $('#HotelName').val();
+//            var hotelAddress = $('#HotelAddress').val();
+//            var roomNumber = $('#RoomNumber').val();
+//            var message = $('#Message').val();
+//
+//            if(title == '' || firstName == '' || lastName == '' || emailAddress == '' || reEmailAddress == '' || nationality == '' || phoneNumber == '' || hotelName == '' || hotelAddress == ''){
+//                alert("The information with (*) symbol is required !");
+//            }
+//            else{
+//                if(emailAddress != reEmailAddress){
+//                    alert("Re-enter your email is not match !");
+//                }
+//                else{
+//                    if(!$('#Payment0').is(':checked') && !$('#Payment1').is(':checked')){
+//                        alert("Please choose a payment method...");
+//                    }
+//                    else{
+//                        var method = "Paypal payment";
+//                        if($('#Payment0').is(':checked')){
+//                            method = "Direct payment";
+//                        }
+//
+//                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber
+//                            +"&hotelName="+hotelName+"&hotelAddress="+hotelAddress+"&roomNumber="+roomNumber+"&method="+method+"&additional-comments="+message+"&tours="+tName.substring(0,tName.length-2)+"&total="+total;
+//
+//                        if($('#Payment0').is(':checked')){
+//                            sendMail(dataString);
+//                        }
+//                    }
+//                }
+//            }
+//        }
     });
 
     function sendMail(dataString){
