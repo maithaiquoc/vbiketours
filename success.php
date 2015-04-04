@@ -1,25 +1,23 @@
-<body onload="lightbox_open('lightRegisterConfirm', 'fadeRegisterConfirm')">
+<meta charset="UTF-8">
+<body>
 <div class="container">
 <div class="row" style="margin-top: 15%; margin-bottom: 20%;">
     <div class="col-lg-3 col-xs-12"></div>
-    <div class="col-lg-6 col-xs-12" style="border: 1px solid #F36F00">
-        <div class="row" style="background-color: orange; font-weight: bolder; font-size: 20px; padding: 10px; color: white; text-align: center"><span style="padding: 20px">XÁC NHẬN</span></div>
+    <div class="col-lg-6 col-xs-12" style="border: 1px solid #e2227c">
+        <div class="row" style="background-color: #e2227c; font-weight: bolder; font-size: 20px; padding: 10px; color: white; text-align: center"><span style="padding: 20px">CONFIRMATION</span></div>
         <div class="row">
             <div class="content">
-                <p style="text-align: center; color: darkgreen; font-weight: bold">Xin chúc mừng bạn đã đăng ký thành viên thành công!</p>
+                <p style="text-align: center; color: darkgreen; font-weight: bold">Congratulate, You are booking successfully! Thank you very much.</p>
             </div>
             <div class="content">
-                <p style="text-align: center; color: red; font-style: italic">Chúng tôi đã gửi cho bạn một email để kích hoạt tài khoản.</p>
+                <p style="text-align: center; color: red; font-style: italic">We sent an notification to your email.</p>
             </div>
             <div class="content">
-                <p style="text-align: center; color: red; font-style: italic">Xin vui lòng kiểm tra hộp thư của bạn và hoàn thành thủ tục đăng ký.</p>
-            </div>
-            <div class="content">
-                <p style="text-align: center; color: darkgreen; font-style: italic">Hệ thống đang chuyển về trang chủ. Nếu hệ thống không tự chuyển, xin vui lòng bấm vào liên kết bên dưới.</p>
+                <p style="text-align: center; color: darkgreen; font-style: italic">The system is automatically redirecting to homepage. Unless, please click on the below link.</p>
             </div>
         </div>
         <div class="row" style="text-align: center">
-            <span style="padding: 10px; width: 500px; background-color: darkorange; color: white; font-size: 18px; cursor: pointer; margin: 20px" onclick="window.location.href = '<?php echo base_url() ?>'">Trở về trang chủ</span>
+            <span style="padding: 10px; width: 500px; background-color: #e2227c; color: white; font-size: 18px; cursor: pointer; margin: 20px" onclick="window.location.href = 'index.html'">Trở về trang chủ</span>
         </div>
     </div>
     <div class="col-lg-3 col-xs-12"></div>
@@ -28,9 +26,9 @@
 </body>
 
 <script>
-    $(document).ready(function () {
+    window.onload = function () {
         window.setTimeout(function () {
-            location.href = "<?php echo base_url() ?>";
+            location.href = "index.html";
         }, 10000)
-    });
+    }
 </script>

@@ -98,7 +98,7 @@
 
          if(!empty($result_tieubieu)){$index = 0; $totalProduct = count($result_tieubieu);
 
-		for($j=0,$count_cc=count($result_tieubieu);$j<$count_cc;$j++){$index += 1;						
+		for($j=0,$count_cc=count($result_tieubieu);$j<$count_cc;$j++){$index += 1;
 
 		?>       
             <div class="rsform-tour-options rsform-tour4">
@@ -364,7 +364,7 @@
             var BookingScript = function() {
                 var handleAction = function() {
                     jQuery('#Review').click(function() {
-        
+
                         if( isDenied ) {
                             alert(jQuery('#ReDenyShortNoticeBookingAnnounce').val());
                             return false;
@@ -1021,7 +1021,7 @@
         </div>
 <!-- //CONTENT -->					</div>
 
-			
+
 	</div>
 	</div>
 </div>
