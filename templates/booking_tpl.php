@@ -1045,8 +1045,6 @@
           <input name="item_name" type="hidden" id="item_name" value="Check out for booking on vbiketours.com" size="45">
           <input name="amount" type="hidden" id="amount" value="" size="45">
       </form>
-
-      <input type="button" value="test" onclick="getStatus();">
   </div>
 </div>
 
