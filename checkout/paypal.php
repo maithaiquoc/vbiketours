@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $tx=$_REQUEST['tx'];
 if($tx != ''){
     $paypal_url='https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_notify-synch&tx='.$tx.'&at=eASEcel7Iwm7xQiqugxPof9P6MGjSDg_fTNXBX4V9vUzYySpvLHmfDO4AQ4';
@@ -30,8 +31,8 @@ if($tx != ''){
             list($key,$val) = explode("=", $lines[$i]);
             $keyarray[urldecode($key)] = urldecode($val);
         }
-        echo $payment_status=$keyarray['payment_status'];
-        echo $payment_gross=$keyarray['payment_gross'];
+        $payment_status=$keyarray['payment_status'];
+        $payment_gross=$keyarray['payment_gross'];
     }
 }
 ?>

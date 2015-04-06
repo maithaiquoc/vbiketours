@@ -1,3 +1,4 @@
+<?php include("checkout/paypal.php") ?>
 <meta charset="UTF-8">
 <body>
 <div class="container">
@@ -27,8 +28,8 @@
 
 <script>
     window.onload = function () {
-        window.setTimeout(function () {
-            location.href = "index.html";
-        }, 10000)
+//        window.setTimeout(function () {
+//            location.href = "index.html";
+//        }, 10000)
     }
 </script>
