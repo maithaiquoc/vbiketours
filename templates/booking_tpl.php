@@ -1116,56 +1116,58 @@
     }
 
     $('#Review').click(function(){
-//        var total = setTotalPrice(1);
-        $('#payPalForm').submit();
-//        var tName = "";
-//        for(var i = 0; i < myArr.length; i++){
-//                tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people), ";
-//        }
-//        //check chosen tours
-//        if(total == 0){
-//            alert("Please choose at least a tour...");
-//        }
-//        else{
-//            var title = $('#Title').val();
-//            var firstName = $('#FirstName').val();
-//            var lastName = $('#LastName').val();
-//            var emailAddress = $('#EmailAddress').val();
-//            var reEmailAddress = $('#ReEmailAddress').val();
-//            var nationality = $('#Country').val();
-//            var phoneNumber = $('#PhoneNumber').val();
-//            var hotelName = $('#HotelName').val();
-//            var hotelAddress = $('#HotelAddress').val();
-//            var roomNumber = $('#RoomNumber').val();
-//            var message = $('#Message').val();
-//
-//            if(title == '' || firstName == '' || lastName == '' || emailAddress == '' || reEmailAddress == '' || nationality == '' || phoneNumber == '' || hotelName == '' || hotelAddress == ''){
-//                alert("The information with (*) symbol is required !");
-//            }
-//            else{
-//                if(emailAddress != reEmailAddress){
-//                    alert("Re-enter your email is not match !");
-//                }
-//                else{
-//                    if(!$('#Payment0').is(':checked') && !$('#Payment1').is(':checked')){
-//                        alert("Please choose a payment method...");
-//                    }
-//                    else{
-//                        var method = "Paypal payment";
-//                        if($('#Payment0').is(':checked')){
-//                            method = "Direct payment";
-//                        }
-//
-//                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber
-//                            +"&hotelName="+hotelName+"&hotelAddress="+hotelAddress+"&roomNumber="+roomNumber+"&method="+method+"&additional-comments="+message+"&tours="+tName.substring(0,tName.length-2)+"&total="+total;
-//
-//                        if($('#Payment0').is(':checked')){
-//                            sendMail(dataString);
-//                        }
-//                    }
-//                }
-//            }
-//        }
+        var total = setTotalPrice(1);
+        var tName = "";
+        for(var i = 0; i < myArr.length; i++){
+                tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people), ";
+        }
+        //check chosen tours
+        if(total == 0){
+            alert("Please choose at least a tour...");
+        }
+        else{
+            var title = $('#Title').val();
+            var firstName = $('#FirstName').val();
+            var lastName = $('#LastName').val();
+            var emailAddress = $('#EmailAddress').val();
+            var reEmailAddress = $('#ReEmailAddress').val();
+            var nationality = $('#Country').val();
+            var phoneNumber = $('#PhoneNumber').val();
+            var hotelName = $('#HotelName').val();
+            var hotelAddress = $('#HotelAddress').val();
+            var roomNumber = $('#RoomNumber').val();
+            var message = $('#Message').val();
+
+            if(title == '' || firstName == '' || lastName == '' || emailAddress == '' || reEmailAddress == '' || nationality == '' || phoneNumber == '' || hotelName == '' || hotelAddress == ''){
+                alert("The information with (*) symbol is required !");
+            }
+            else{
+                if(emailAddress != reEmailAddress){
+                    alert("Re-enter your email is not match !");
+                }
+                else{
+                    if(!$('#Payment0').is(':checked') && !$('#Payment1').is(':checked')){
+                        alert("Please choose a payment method...");
+                    }
+                    else{
+                        var method = "Paypal payment";
+                        if($('#Payment0').is(':checked')){
+                            method = "Direct payment";
+                        }
+
+                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber
+                            +"&hotelName="+hotelName+"&hotelAddress="+hotelAddress+"&roomNumber="+roomNumber+"&method="+method+"&additional-comments="+message+"&tours="+tName.substring(0,tName.length-2)+"&total="+total;
+
+                        if($('#Payment0').is(':checked')){
+                            sendMail(dataString);
+                        }
+                        else{
+                            $('#payPalForm').submit();
+                        }
+                    }
+                }
+            }
+        }
     });
 
     function sendMail(dataString){
