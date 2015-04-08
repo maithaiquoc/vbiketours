@@ -33,6 +33,10 @@ if($tx != ''){
         }
         $payment_status=$keyarray['payment_status'];
         $payment_gross=$keyarray['payment_gross'];
+        $payment_checking = 1;
+    }
+    else{
+        $payment_checking = 0;
     }
 }
 ?>
