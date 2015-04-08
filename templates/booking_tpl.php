@@ -1,5 +1,8 @@
 <?php include _template."layout/dongchu.php"; ?>
-<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
 <div class="hide-sm" id="belong-anywhere-wrapper">
   <div id="ja-container" class="wrap ">
 	<div class="main clearfix">
@@ -1032,7 +1035,6 @@
         </div>
 	</div>
 	</div>
-  <?php include("checkout/paypal.php"); ?>
   <div>
       <form id="payPalForm" action = "https://www.sandbox.paypal.com/cgi-bin/webscr" method = "post" target="_blank">
           <input type="hidden" id="item_number" name="item_number" value="">
@@ -1040,8 +1042,8 @@
           <input type="hidden" name="no_note" value="1">
           <input type="hidden" name="business" value="maithaiquoc@gmail.com">
           <input type="hidden" name="currency_code" value="USD">
-          <input type="hidden" name="return" value="http://vbiketours.com/success.php">
-          <input type="hidden" name="cancel" value="http://vbiketours.com/success.php">
+          <input type="hidden" name="return" value="http://localhost:81/VBIKETOURS/success.php?vbt=<?php echo $vbt = md5(uniqid(rand())); ?>">
+          <input type="hidden" name="cancel" value="http://localhost:81/VBIKETOURS/success.php?vbt=<?php echo $vbt; ?>">
           <input name="item_name" type="hidden" id="item_name" value="Check out for booking on vbiketours.com" size="45">
           <input name="amount" type="hidden" id="amount" value="" size="45">
       </form>
@@ -1051,6 +1053,7 @@
 <script>
     var myArr;
     var num = "<?php echo $totalProduct ?>";
+    var paymentCode = "<?php echo $vbt ?>";
 
     window.onload = function(){
         var tName = "<?php echo $_POST['hidNameBookingNow'] ?>";
@@ -1155,16 +1158,14 @@
                             method = "Direct payment";
                         }
 
-                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber
+                        var dataString = "title="+title+"&firstName="+firstName+"&lastName="+lastName+"&emailAddress="+emailAddress+"&nationality="+nationality+"&phoneNumber="+phoneNumber+"&paymentCode="+paymentCode
                             +"&hotelName="+hotelName+"&hotelAddress="+hotelAddress+"&roomNumber="+roomNumber+"&method="+method+"&additional-comments="+message+"&tours="+tName.substring(0,tName.length-2)+"&total="+total;
 
                         if($('#Payment0').is(':checked')){
                             sendMail(dataString);
                         }
                         else{
-                            $('#payPalForm').submit();
-//                            insertBooking(dataString);
-//                            getStatus();
+                            insertBooking(dataString);
                         }
                     }
                 }
@@ -1173,32 +1174,45 @@
     });
 
     function getStatus(){
+        var dataString = "paymentCode="+paymentCode+"&functionName="+"getStatus";
         var time = setInterval(function(){
             $.ajax({
                 type: "POST",
                 url: "checkout/functions.php",
-                data: {functionName: 'getStatus'},
+                data: dataString,
                 success: function(x){
 //                    alert(x);
-                    if(x != ''){
-                        window.location.href = "success.php";
+                    if(x != 'InProgress'){
+//                        alert(x);
+                        window.close();
+                    }
+
+                    if(x == 0){
+                        clearInterval(time);
+                        alert("Error! Please refresh this page and try again...");
                     }
                 }
             });
         }, 1000);
     }
 
-    //redirect to step 3
     function insertBooking(dataString){
         var dataString = dataString+"&functionName="+"insertBooking";
-        //alert(dataString);
+//        alert(dataString);
 
         $.ajax({
             type: "POST",
             url: "checkout/functions.php",
             data: dataString,
             success: function(x){
-                alert(x);
+//                alert(x);
+                if(x == 1){
+                    $('#payPalForm').submit();
+                    getStatus();
+                }
+                else{
+                    alert("Error! Please refresh this page and try again...");
+                }
             }
         });
     }
@@ -1209,7 +1223,7 @@
             url: "phpmailer/vbiketours/booking_success.php",
             data: dataString,
             success: function(x){
-                window.location.href = "success.php";
+                window.location.href = "success.php?dp=1";
             }
         });
     }
