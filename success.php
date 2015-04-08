@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="row" style="text-align: center" id="divHome">
-            <span style="padding: 10px; width: 500px; background-color: #e2227c; color: white; font-size: 18px; cursor: pointer; margin: 20px" onclick="window.location.href = 'index.html'">Trở về trang chủ</span>
+            <span style="padding: 10px; width: 500px; background-color: #e2227c; color: white; font-size: 18px; cursor: pointer; margin: 20px" onclick="window.location.href = 'index.html'">Back to homepage</span>
         </div>
     </div>
     <div class="col-lg-3 col-xs-12"></div>
