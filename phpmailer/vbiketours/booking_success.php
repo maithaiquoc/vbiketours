@@ -17,13 +17,16 @@ require_once('../class.phpmailer.php');
 
 $mail             = new PHPMailer();
 
-$body             = '<div class="container-fluid">
+$paypal = $_POST['paypal'];
+
+if($paypal != 1){
+    $body             = '<div class="container-fluid">
                         <div class="row" style="margin: 5px;">
                             <p class="btn btn-info">Announce about booking successfully!</p>
                         </div>
                         <div class="row" style="margin: 5px;">
                             <img src="http://vbiketours.com/images/logo.png">
-                            <p>Hello '. $_POST["title"].' '.$_POST["firstName"] .' ,</p>
+                            <p>Dear '. $_POST["title"].' '.$_POST["firstName"] .',</p>
                             <p>Congratulate your booking was done successfully on VBIKETOURS system.</p><br/>
                             <p style="text-decoration: underline;">Details of your booking:</p><br/>
                         </div>
@@ -40,6 +43,58 @@ $body             = '<div class="container-fluid">
                         <p>Thank you very much.</p>
                         <p><a href="http://vbiketours.com/">Vbiketours</a></p>
                     </div>';
+
+    $address = $_POST['emailAddress'];
+}
+else{
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "vbiketours";
+
+    $paymentCode = filter_input(INPUT_POST, 'paymentCode');
+
+    $conn = new mysqli($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'], $GLOBALS['dbname']);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM payment WHERE payment_code = '$paymentCode'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            $address = $row["booker_email"];
+
+            $body             = '<div class="container-fluid">
+                        <div class="row" style="margin: 5px;">
+                            <p class="btn btn-info">Announce about booking successfully!</p>
+                        </div>
+                        <div class="row" style="margin: 5px;">
+                            <img src="http://vbiketours.com/images/logo.png">
+                            <p>Dear '. $row["booker_name"] .',</p>
+                            <p>Congratulate your booking was done successfully on VBIKETOURS system.</p><br/>
+                            <p style="text-decoration: underline;">Details of your booking:</p><br/>
+                        </div>
+                        <div class="row" style="margin: 5px; padding: 5px; border: 1px solid #e2227c">
+                            <p>Tours: <b>'.$row["tours_name"].'</b></p>
+                            <p>Total: <b>'.$row["payment_amount"].' $</b></p>
+                            <p>Check out: <b>Paypal payment</b></p>
+                            <p>Time: <b>'.$row["payment_datetime"].'</b></p>
+                            <p>Transaction ID: <b>'.$row["transaction_id"].'</b></p>
+                        </div>
+                        <p>Thank you very much.</p>
+                        <p><a href="http://vbiketours.com/">Vbiketours</a></p>
+                    </div>';
+        }
+    } else {
+        echo 0;
+    }
+
+    $conn->close();
+}
 
 $mail->IsSMTP(); // telling the class to use SMTP
 $mail->Host       = "ssl://smtp.googlemail.com"; // SMTP server
@@ -62,7 +117,6 @@ $mail->AltBody    = "To view the message, please use an HTML compatible email vi
 
 $mail->MsgHTML($body);
 
-$address = $_POST['emailAddress'];
 $mail->AddAddress($address, $_POST['firstName'].' '.$_POST['lastName']);
 
 //$mail->AddAttachment("images/phpmailer.gif");      // attachment
