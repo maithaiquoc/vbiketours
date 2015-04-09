@@ -4,8 +4,8 @@
     </div>
     <div class="clear"></div>
     <div class="show-pro">   
-        
-                 <?php 
+
+                 <?php
                     if(count($duan)>0){
                  for($i=0,$count_sp=count($duan);$i<$count_sp;$i++) { ?>
                  <div class="pro">

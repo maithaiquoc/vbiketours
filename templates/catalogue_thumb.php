@@ -1,14 +1,14 @@
 <?php
 session_start();
 	@define ( '_lib' , '../admin/lib/');
-	@define ( '_source' , '../sources/');	
-	
+	@define ( '_source' , '../sources/');
+
 	$lang_arr=array("vi","en");
 	if (isset($_GET['lang']) == true){
         if (in_array($_GET['lang'], $lang_arr)==true){
             $lang = $_GET['lang'];
             $_SESSION['lang']=$lang;
-        } 
+        }
 	}
     if(isset($_SESSION['lang'])){
         $lang= $_SESSION['lang'];
@@ -16,24 +16,24 @@ session_start();
         $lang="vi";
     }
 
-	
-	 require_once _source."lang_$lang.php";			
+
+	 require_once _source."lang_$lang.php";
     include_once _lib."config.php";
     include_once _lib."constant.php";
     include_once _lib."functions.php";
     include_once _lib."class.database.php";
-	$d = new database($config['database']);  
-	
+	$d = new database($config['database']);
+
 	$id =  addslashes($_GET['id']);
 	$d->reset();
 	$sql_lanxem = "UPDATE #_catalogue SET luotxem=luotxem+1  WHERE id ='".$id."'";
 			$d->query($sql_lanxem);
-		
+
 		$d->reset();
 		$sql_detail = "select id_list,id_cat,id_item,id,photo,thumb,ten_$lang,tenkhongdau,gia,masp,ngaytao,chitiet_$lang,luotxem from #_catalogue where hienthi=1 and id='".$id."'";
 		$d->query($sql_detail);
 		$row_detail = $d->fetch_array();
-		
+
 		#hinh cua catalogue======================
 		$d->reset();
 		$sql_detail = "select id,thumb,photo from #_hasp where hienthi=1 and id_photo='".$id."'";
@@ -75,7 +75,7 @@ session_start();
 	<div id="cata_right">
     	<h3 class="title-cata"><?=$row_detail['ten_'.$lang]?></h3>
         <p class="pro-name"><?=_ma?> :<a href="catalogue/<?=$row_detail['id']?>-<?=$row_detail['tenkhongdau']?>.html"><?=$row_detail['masp']?></a></p>
-		<p class="pro-price"><?=_gia?>: <span class="red"><?php if($row_detail['gia'] =="" || $row_detail['gia'] =="0") echo 'Liên hệ'; else echo number_format ($row_detail['gia'],0,",","."); ?> </span> vnđ</p>
-        <p><?=_chitiet?>: <?=$row_detail['chitiet_'.$lang]?></p> 
+		<p class="pro-price"><?=_gia?>: <span class="red"><?php if($row_detail['gia'] =="" || $row_detail['gia'] =="0") echo 'Liên h?'; else echo number_format ($row_detail['gia'],0,",","."); ?> </span> vn?</p>
+        <p><?=_chitiet?>: <?=$row_detail['chitiet_'.$lang]?></p>
     </div><!--cata_right-->
 </div><!--cata_wrap-->

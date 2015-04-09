@@ -31,8 +31,8 @@
 
 
 <div class="article-content">
-<div class="error">Although our clients look like they're having a lot of fun driving the motorbikes, these photos are staged - we do not allow our customers to drive on our tours
-                        </div>
+<!--<div class="error">Although our clients look like they're having a lot of fun driving the motorbikes, these photos are staged - we do not allow our customers to drive on our tours-->
+<!--                        </div>-->
 <div></div>
 <div><div style="clear:both"></div>
 
@@ -52,7 +52,7 @@
 	        <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['photo']?>" class="ag_imageThumb">
 		    </a>
 		    </span>
-             <?php }}?>
+             <?php }}else{echo "<p>There is no images here...</p>";}?>
            
 	</td>
       </tr>
