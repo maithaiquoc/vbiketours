@@ -5,7 +5,7 @@
 			 <ul id="ja-cssmenu">
 <li class="havechild menu-item0 active first-item">
 
-<button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location">
+<button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location" style="width: 150px;">
  <a href="list_tour.html" class="menu-item0 active first-item haschild" id="menu1" title="Our Tours">Our Tours
 </button></a>
 <ul>
@@ -31,7 +31,7 @@
 </ul></li>
 
 </ul>
-			    <button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location">
+			    <button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location" style="width: 150px;">
                 <a href="booking-now.html">Booking Now </a></button>
                 <!--<input type="text" class="form-inline location input-large input-contrast" autocomplete="off" id="location" name="location" placeholder="Where do you want to go?">-->
                    <input type="text" class="form-inline location input-large input-contrast" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Tìm ki?m' ) this.value=''" placeholder="Where do you want to go?"/>
@@ -39,29 +39,29 @@
               </div>
 
 
-              <div class="select select-large">
-                <select id="guests" name="guests">
-                  <option value="1">1 Guest</option>
-                  <option value="2">2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5">5 Guests</option>
-                  <option value="6">6 Guests</option>
-                  <option value="7">7 Guests</option>
-                  <option value="8">8 Guests</option>
-                  <option value="9">9 Guests</option>
-                  <option value="10">10 Guests</option>
-                  <option value="11">11 Guests</option>
-                  <option value="12">12 Guests</option>
-                  <option value="13">13 Guests</option>
-                  <option value="14">14 Guests</option>
-                  <option value="15">15 Guests</option>
-                  <option value="16">16+ Guests</option>
-                </select>
-              </div>
+<!--              <div class="select select-large">-->
+<!--                <select id="guests" name="guests">-->
+<!--                  <option value="1">1 Guest</option>-->
+<!--                  <option value="2">2 Guests</option>-->
+<!--                  <option value="3">3 Guests</option>-->
+<!--                  <option value="4">4 Guests</option>-->
+<!--                  <option value="5">5 Guests</option>-->
+<!--                  <option value="6">6 Guests</option>-->
+<!--                  <option value="7">7 Guests</option>-->
+<!--                  <option value="8">8 Guests</option>-->
+<!--                  <option value="9">9 Guests</option>-->
+<!--                  <option value="10">10 Guests</option>-->
+<!--                  <option value="11">11 Guests</option>-->
+<!--                  <option value="12">12 Guests</option>-->
+<!--                  <option value="13">13 Guests</option>-->
+<!--                  <option value="14">14 Guests</option>-->
+<!--                  <option value="15">15 Guests</option>-->
+<!--                  <option value="16">16+ Guests</option>-->
+<!--                </select>-->
+<!--              </div>-->
 
             <!--  <button type="submit" class="search-button form-inline btn btn-primary btn-large" id="submit_location"> Search </button>-->
-            <input  value="Search" name="sreachAct" id="btnSearch" class="search-button form-inline btn btn-primary btn-large" type="submit" />
+            <input  value="Search" name="sreachAct" id="btnSearch" class="search-button form-inline btn btn-primary btn-large" type="submit" style="width: 150px;"/>
             </form>
           <?php /*?>   <form name="frm_search" id="frm_search" method="get" action="tim-kiem/" onsubmit="return false;">
               <input type="input" class="	" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" style="color:#888;width: 163px;" onfocus="if(this.value =='Tìm ki?m' ) this.value=''" />
