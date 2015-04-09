@@ -3,11 +3,11 @@
 	$(function(){
 		var big_img=$(".relatedimg li:eq(0)").html();
 		$(".big_img").html(big_img);
-		
+
 		$(".relatedimg img").live("click",function(){
 			big_img=$(this).parent().html();
 			$(".big_img").html(big_img);
-		});		
+		});
 		$('.scrollpane').jcarousel({vertical:true,scroll:1});
 	})
 //]]></script>
@@ -18,14 +18,14 @@
 <div class="box_content">
 
 	<div id="seriesintro">
-    
+
     	<div class="big_img"></div><!-- end big image -->
-        
+
         <div class="intro">
         	<h1><?=$loaitin[0]['ten_'.$lang]?></h1>
-    
+
             <div class="preview"><?=$loaitin[0]['mota_'.$lang]?></div>
-            
+
             <h3>Gallery</h3>
             <div class="relatedimg">
             	<div class="scrollpane"><ul>
@@ -34,10 +34,10 @@
 <?php } ?>
 </ul></div>
             </div>
-            
-           
+
+
         </div><!-- end intro -->
-        
-    </div><!-- end seriesintro -->              
+
+    </div><!-- end seriesintro -->
     <div class="clear"></div>
 </div>
