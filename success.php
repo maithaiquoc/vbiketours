@@ -1,10 +1,10 @@
 <?php include("checkout/paypal.php") ?>
-<?php if($_GET['dp'] != 1){if($payment_checking == 0){header("Location: index.html");}} ?>
+<?php //if($_GET['dp'] != 1){if($payment_checking == 0){header("Location: index.html");}} ?>
 <meta charset="UTF-8">
 <head><script type="text/javascript" src="js/jquery-1.10.2.min.js"></script></head>
-<body onload="finishPayment();">
+<body onload="finishPayment();" style="background: url('images/123.jpg') no-repeat ; background-size: cover; font-family: 'Circular,'Helvetica Neue'',Helvetica,Arial,sans-serif;">
 <div class="container">
-<div class="row" style="margin-top: 15%; margin-bottom: 20%;">
+<div class="row" style="margin-top: 15%; margin-bottom: 20%; background-color: white; opacity: 0.85">
     <div class="col-lg-3 col-xs-12"></div>
     <div class="col-lg-6 col-xs-12" style="border: 1px solid #e2227c">
         <div class="row" style="background-color: #e2227c; font-weight: bolder; font-size: 20px; padding: 10px; color: white; text-align: center"><span style="padding: 20px">CONFIRMATION</span></div>
