@@ -17,7 +17,7 @@
             <div class="ib ii_dropdown_wr banner_des_select hide_64">
               <div class="ii_dropdown_2wr place_disclosure">
                 <div class="ii_disclosure disclosure_link">
-                  <div class="place_desination rb4 sd pad_0_20 triip_btn"> Choose your category ?</div>
+<!--                  <div class="place_desination rb4 sd pad_0_20 triip_btn"> Choose your category ?</div>-->
                   <div class="ii_disclosure_list sd place_list" style="display:none">
                     <div class="place_list_wr">
                     <?php
