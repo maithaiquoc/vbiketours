@@ -1,7 +1,7 @@
 <?php include _template."layout/dongchu.php"; ?>
 <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 </head>
 <div class="hide-sm" id="belong-anywhere-wrapper">
   <div id="ja-container" class="wrap ">
