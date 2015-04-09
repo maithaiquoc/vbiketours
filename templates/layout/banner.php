@@ -6,8 +6,8 @@
 
         <li><a href="hoi-dap.html" title="<?=_hoidap?>"><?=_hoidap?></a></li>
 
-        <li class="nobg"><a href="chinh-sach.html" title="<?=_chinhsach?>"><?=_chinhsach?></a></li> 
-         <li class="nobg"><a href="login.html" title="<?=_chinhsach?>">login</a></li> 
+        <li class="nobg"><a href="chinh-sach.html" title="<?=_chinhsach?>"><?=_chinhsach?></a></li>
+         <li class="nobg"><a href="login.html" title="<?=_chinhsach?>">login</a></li>
 
     </ul><!--nav-->
 
@@ -15,7 +15,7 @@
 
         <div class="lang">
 
-            <span><a href="index.php?com=langs&lang=vi" title="Tiếng việt" id="flag_vi">&nbsp;</a></span>&nbsp;
+            <span><a href="index.php?com=langs&lang=vi" title="Ti?ng vi?t" id="flag_vi">&nbsp;</a></span>&nbsp;
 
             <span><a href="index.php?com=langs&lang=en" title="English" id="flag_en">&nbsp;</a></span>
 
@@ -23,20 +23,20 @@
 
         <div class="cart_con">
 
-            <a href="gio-hang.html" title="Giỏ hàng"><?=_giohang?>: <?php echo count(@$_SESSION['cart']);?> món</a> &nbsp; 
+            <a href="gio-hang.html" title="Gi? hàng"><?=_giohang?>: <?php echo count(@$_SESSION['cart']);?> món</a> &nbsp;
 			 <?
 
 			if(is_array(@$_SESSION['cart'])){
-				
-				
+
+
 			?>
-      <?=number_format(get_order_total(),0, ',', '.')?> <span>đ</span>
-             <?					
+      <?=number_format(get_order_total(),0, ',', '.')?> <span>?</span>
+             <?
 
 				}
 
 			?>
-           
+
 
         </div>
 
@@ -62,7 +62,7 @@
 
 	$row=$d->fetch_array();
 
-	if($row!=FALSE) 
+	if($row!=FALSE)
 
 		echo'<object width="1000" height="329" id="banner"   codebase="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
 
@@ -112,5 +112,5 @@
 
 ?>
 
-   
+
 

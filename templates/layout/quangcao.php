@@ -2,7 +2,7 @@
 	$d->reset();
 	$sql_qctrai="select mota,photo from #_quangcao where vitri=1 and hienthi=1 order by stt,id desc";
 	$result_qctrai=$d->query($sql_qctrai);
-	
+
 	$d->reset();
 	$sql_qcphai="select mota,photo from #_quangcao where vitri=2 and hienthi=1 order by stt,id desc";
 	$result_qcphai=$d->query($sql_qcphai);
@@ -12,11 +12,11 @@
     <a href="<?=$rows_qcphai['mota']?>" target="_blank"><img src="<?=_upload_hinhanh_l.$rows_qcphai['photo']?>" width="120" /></a><br/>
 	<?php } ?>
     </div>
-    
+
     <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
     <?php while($rows_qctrai=mysql_fetch_assoc($result_qctrai)) { ?>
     <a href="<?=$rows_qctrai['mota']?>" target="_blank"><img src="<?=_upload_hinhanh_l.$rows_qctrai['photo']?>" width="120" /></a><br/>
-	<?php } ?>     
+	<?php } ?>
     </div>
     <script>
         function FloatTopDiv()
@@ -61,7 +61,7 @@
         function ShowAdDiv()
         {
             var objAdDivRight = document.getElementById("divAdRight");
-            var objAdDivLeft = document.getElementById("divAdLeft");       
+            var objAdDivLeft = document.getElementById("divAdLeft");
             if (document.body.clientWidth < 1000)
             {
                 objAdDivRight.style.display = "none";
@@ -73,7 +73,7 @@
                 objAdDivLeft.style.display = "block";
                 FloatTopDiv();
             }
-        } 
+        }
     </script>
     <script>
     document.write("<script type='text/javascript' language='javascript'>MainContentW = 1000;LeftBannerW = 120;RightBannerW = 120;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 40;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");

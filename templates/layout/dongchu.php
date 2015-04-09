@@ -8,7 +8,6 @@
 	$d->query($sql_slider);
 
 	$result_slider=$d->result_array();
-
 ?>
 <div class="hide-sm" id="community-wrapper">
   <div class="ja-moduletable moduletable  clearfix" id="Mod76">
@@ -22,7 +21,6 @@
           <?php
 
 		for($i=0,$count_slider=count($result_slider);$i<$count_slider;$i++){
-
 	?>
           <div class="ja-headlines-item jahl-verticald ja_cfl_rss_div" style="color: #d63588; visibility: hidden; padding: 10px 0px; margin: 0px auto; z-index: 2; width: 903px; zoom: 1; opacity: 0; top: 0px;"> <?=@$result_slider[$i]['ten_vi']?> </div>
           <?php }?>
