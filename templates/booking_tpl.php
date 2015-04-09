@@ -1067,6 +1067,8 @@
             }
         }
         setMoney(tPrice*21000, tPrice);
+
+        $('#hero').html('<ul class="list-unstyled" id="slideshow"><li class="active"> <img alt="" src="./images/slider.png" width="100%"> </li></ul>');
     };
 
     function addTour(){
