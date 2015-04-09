@@ -41,3 +41,12 @@ div.error a:hover{
 .ag_reseter fieldset,.ag_reseter form,.ag_reseter label,.ag_reseter legend,
 .ag_reseter table,.ag_reseter caption,.ag_reseter tbody,.ag_reseter tfoot,.ag_reseter thead,.ag_reseter tr,.ag_reseter th,.ag_reseter td
 { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;border:none;border-spacing:0px;border-collapse:collapse;}
+
+#lbImage{
+    background-size: contain;
+}
+
+#lbImage > div{
+    max-width: 1000px;
+    max-height: 400px;
+}
