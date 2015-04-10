@@ -450,7 +450,6 @@ function login(){
 
 	$password = $_POST['password'];
 
-	
 
 	$sql = "select * from #_user where username='".$username."'";
 
