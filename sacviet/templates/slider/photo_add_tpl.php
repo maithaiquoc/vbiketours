@@ -10,7 +10,7 @@
 
 
 
-    <b>Photo <?=$i+1?></b> <input type="file" name="file<?=$i?>" /> <strong> swf|jpg|gif|png|SWF|JPG|GIF|PNG - Width: 340px/ Height:160px</strong><br />
+    <b>Photo <?=$i+1?></b> <input type="file" name="file<?=$i?>" /> <strong> swf|jpg|gif|png|SWF|JPG|GIF|PNG - Width: 1349px/ Height: 600px</strong><br />
 
 
 
