@@ -507,7 +507,7 @@ a img{border:none;}
 .img_caption p{background:#181818;color:#656565;margin:0;padding:2px 0 0;text-align:center;}
 .haveimage, .article_column .haveimage{padding-left:240px !important;}
 .article-image{left:0;position:absolute;top:5px;}
-.article-image span{background:#181818;border:1px solid #2a2a2a;display:block;float:left;padding:4px;}
+.article-image span{display:block;float:left;padding:4px;position:absolute;top:-10px;}
 .sectiontableheader{background:#181818;border:1px solid #2a2a2a;color:#000;padding:4px;}
 .sectiontableheader a,
 .sectiontableheader a:hover,
