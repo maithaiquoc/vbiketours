@@ -62,7 +62,7 @@
 
                     $d->reset();
 
-                    $sql_newitem="select ten_$lang,noidung_$lang, id,photo,thumb,tenkhongdau from #_duan where hienthi =1  order by stt,id desc";
+                    $sql_newitem="select ten_$lang,noidung_$lang, id,photo,thumb,tenkhongdau from #_duan where hienthi =1  order by ngaytao desc";
 
                     $d->query($sql_newitem);
 
