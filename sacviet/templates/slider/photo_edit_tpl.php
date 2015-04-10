@@ -84,7 +84,7 @@ if (strpos($item['photo'],'swf') == true){
 
 
 
-	<b>Photo </b> <input type="file" name="file" /> <strong>Width: 1349px Height: 600px - Dạng:swf|jpg|gif|png|SWF|JPG|GIF|PNG</strong><br />
+	<b>Photo </b> <input type="file" name="file" /> <strong>Width: 1349px/ Height: 600px - Dạng:swf|jpg|gif|png|SWF|JPG|GIF|PNG</strong><br />
 
 
 
