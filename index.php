@@ -102,7 +102,7 @@ $row_setting = $d->fetch_array();
 
 <meta name="description" content="<?=$row_setting['description']?>" />
 
-<meta name="author" content="vbiketours@gmail.com - (08) 66852366" />
+<meta name="author" content="vbiketours@gmail.com - Landline: (08) 66 85 23 66 - Hotline: 090 3 378 266" />
 
 <meta name="copyright" content="www.vbiketours.com" />
 
