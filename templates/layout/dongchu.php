@@ -13,9 +13,9 @@
   <div class="ja-moduletable moduletable  clearfix" id="Mod76">
     <div class="ja-box-ct clearfix">
       <div class="ja-healineswrap ja_cfl_rss_overall">
-        <div class="ja_cfl_rss_title_left"></div>
-        <div class="ja_cfl_rss_title"><strong>Headlines</strong></div>
-        <div class="ja_cfl_rss_title_right"></div>
+<!--        <div class="ja_cfl_rss_title_left"></div>-->
+<!--        <div class="ja_cfl_rss_title"><strong>Headlines</strong></div>-->
+<!--        <div class="ja_cfl_rss_title_right"></div>-->
         <div id="jalh-modid76" class="ja_cfl_rss_body">
           <!-- HEADLINE CONTENT -->
           <?php
