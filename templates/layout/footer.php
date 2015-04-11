@@ -210,7 +210,7 @@ $d->reset();
         <li> <a href="<?=$row_setting['facebook_link'] ?>" class="link-contrast footer-icon-container" target="_blank"> <i class="icon footer-icon icon-facebook"></i> </a> </li>
         <li> <a href="<?= $row_setting['googleplus_link'] ?>" class="link-contrast footer-icon-container" target="_blank"> <i class="icon footer-icon icon-google-plus"></i> </a> </li>
         <li> <a href="<?= $row_setting['twitter_link'] ?>" class="link-contrast footer-icon-container" target="_blank"> <i class="icon footer-icon icon-twitter"></i> </a> </li>
-        <li> <a href="<?= $row_setting['linkedin_link'] ?>" class="link-contrast footer-icon-container" target="_blank"> <i class="icon footer-icon icon-linkedin"></i> </a> </li>
+<!--        <li> <a href="--><?//= $row_setting['linkedin_link'] ?><!--" class="link-contrast footer-icon-container" target="_blank"> <i class="icon footer-icon icon-linkedin"></i> </a> </li>-->
         
       </ul>
       <div id="copyright" class="row-space-top-2 text-muted"> All right Vbiketour . </div>
