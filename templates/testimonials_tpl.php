@@ -73,3 +73,9 @@ $paging=paging_home($result_tieubieu, $url, $curPage, $maxR, $maxP);
       <!-- //CONTENT --> </div>
   </div>
 </div>
+
+<script>
+    window.onload = function(){
+        $('span').css("font-size", "inherit");
+    }
+</script>
