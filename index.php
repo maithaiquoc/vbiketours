@@ -102,9 +102,9 @@ $row_setting = $d->fetch_array();
 
 <meta name="description" content="<?=$row_setting['description']?>" />
 
-<meta name="author" content="Hien.duong5687@yahoo.com - 0978618680" />
+<meta name="author" content="vbiketours@gmail.com - (08) 66852366" />
 
-<meta name="copyright" content="www.webrehcm.com [Hien.duong5687@yahoo.com]" />
+<meta name="copyright" content="www.vbiketours.com" />
 
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 
@@ -362,13 +362,13 @@ $('#CategoryImage').attr("src", path);
 <link rel="stylesheet" href="css/allinone.css" type="text/css">
 <link rel="stylesheet" href="css/css.css" type="text/css">
 <link rel="stylesheet" href="./css/white.css" type="text/css">
-<meta name="description" content="Rent unique accommodations from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.">
+<meta name="description" content="Motorbike tours in Viet Nam">
 <meta property="fb:app_id" content="138566025676">
-<meta property="og:site_name" content="Airbnb">
+<meta property="og:site_name" content="Vbiketours">
 <meta property="og:type" content="website">
 <meta property="og:url" content="#">
-<meta property="og:title" content="Vacation Rentals, Homes, Apartments &amp; Rooms for Rent - Airbnb">
-<meta property="og:description" content="Rent unique accommodations from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.">
+<meta property="og:title" content="VBIKETOURS - DISCOVER VIET NAM ON MOTORBIKE">
+<meta property="og:description" content="Motorbike tours in Viet Nam">
 <meta property="og:image" content="#logo">
 <meta property="og:locale" content="en_US">
 
