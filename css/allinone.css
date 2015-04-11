@@ -1609,3 +1609,10 @@ border: solid 3px #ffeb00;
     transform: rotate(90deg); left: 193px;   width: 0;     height: 0;     border-left: 15px solid transparent;     border-right: 15px solid transparent;     border-top: 15px solid #B7EDFF;     margin: 0 0 0 25px; }
 .testimonial-author {     margin: 0 0 0 25px;     font-family: Arial, Helvetica, sans-serif;     color: #999;     text-align:left; }
 .testimonial-author span {     font-size: 12px;     color: #666; }
+#share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
