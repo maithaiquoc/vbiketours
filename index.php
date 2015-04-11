@@ -367,7 +367,7 @@ $('#CategoryImage').attr("src", path);
 <meta property="og:site_name" content="Vbiketours">
 <meta property="og:type" content="website">
 <meta property="og:url" content="#">
-<meta property="og:title" content="VBIKETOURS - DISCOVER VIET NAM ON MOTORBIKE">
+<meta property="og:title" id="metaTitle" content="<?php echo $row_detail['ten_vi']; ?>">
 <meta property="og:description" content="Motorbike tours in Viet Nam">
 <meta property="og:image" content="#logo">
 <meta property="og:locale" content="en_US">
