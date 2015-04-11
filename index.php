@@ -369,7 +369,7 @@ $('#CategoryImage').attr("src", path);
 <meta property="og:url" content="#">
 <meta property="og:title" id="metaTitle" content="<?php echo $row_detail['ten_vi']; ?>">
 <meta property="og:description" content="Motorbike tours in Viet Nam">
-<meta property="og:image" content="#logo">
+<meta property="og:image" content="src="<?=_upload_product_l,$row_detail['photo']?>"">
 <meta property="og:locale" content="en_US">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
