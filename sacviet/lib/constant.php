@@ -1,11 +1,11 @@
 <?php if(!@defined('_lib')) die("Error");
 	
-	@define ( _contact_email_name , "khucgia" );
-	@define ( _contact_email , "tqthang08@gmail.com" );
-	@define ( _contact_yahoo , "tqthang" );
-	@define ( _contact_skype , "tran.quoc.thanh" );
-	@define ( _contact_phone , "(084)08.62705470 " );
-	@define ( _contact_fax , "(084)08.62705470 " );
+	@define ( _contact_email_name , "" );
+	@define ( _contact_email , "" );
+	@define ( _contact_yahoo , "" );
+	@define ( _contact_skype , "" );
+	@define ( _contact_phone , "" );
+	@define ( _contact_fax , "" );
 	
 	@define ( _updating , "Đang cập nhật thông tin" );
 
