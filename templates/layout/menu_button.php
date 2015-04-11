@@ -34,7 +34,7 @@
 			    <button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location" style="width: 150px;">
                 <a href="booking-now.html">Booking Now </a></button>
                 <!--<input type="text" class="form-inline location input-large input-contrast" autocomplete="off" id="location" name="location" placeholder="Where do you want to go?">-->
-                   <input type="text" class="form-inline location input-large input-contrast" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Tìm ki?m' ) this.value=''" placeholder="Where do you want to go?"/>
+                   <input type="text" class="form-inline location input-large input-contrast" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Tìm kiếm' ) this.value=''" placeholder=""/>
                 <p id="enter_location_error_message" class="bad hide"> Please set location </p>
               </div>
 
