@@ -1,4 +1,4 @@
-VBIKETOURS<h3 class="title-pro-new"><?=$title_tcat?></h3>
+<h3 class="title-pro-new"><?=$title_tcat?></h3>
     <div class="clear"></div>
 
 <div class="show-pro"> 
