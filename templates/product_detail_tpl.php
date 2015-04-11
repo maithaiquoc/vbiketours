@@ -146,13 +146,13 @@ display:none;
 
                           <div id="share-buttons">
                               <!-- Facebook -->
-                              <a href="http://www.facebook.com/sharer.php?u=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-
-                              <!-- Twitter -->
-                              <a href="http://twitter.com/share?url=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                              <a href="http://www.facebook.com/sharer.php?u=<?= $pageURL ?>" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
 
                               <!-- Google+ -->
-                              <a href="https://plus.google.com/share?url=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+                              <a href="https://plus.google.com/share?url=<?= $pageURL ?>" target="_blank"><img src="images/google.png" alt="Google" /></a>
+
+                              <!-- Twitter -->
+                              <a href="http://twitter.com/share?url=<?= $pageURL ?>" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a>
 
                               <!-- Pinterest -->
                               <!--    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="http://www.simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a>-->
