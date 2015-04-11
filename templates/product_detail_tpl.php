@@ -129,25 +129,44 @@ display:none;
                     <div class="sharethis_zone">
                       <hr>
                       <p class="addthis_desc">Share this with your friends</p>
-                      <div class="addthis_toolbox addthis_default_style">
-                      <a href="<?=$row_setting['facebook_link'] ?>" target="_blank">
-						<img src="images/Facebook.png" alt="Facebook"  style="width:32px !important;;height:32px !important;" /></a>
-                      
-                      <a href="<?= $row_setting['twitter_link'] ?>" target="_blank" >
-					<img src="images/twitter.png" alt="Twitter"  style="width:32px !important;;height:32px !important;"  />
-						</a>
-                      
-                      <a href="<?= $row_setting['googleplus_link'] ?>" target="_blank">
+<!--                      <div class="addthis_toolbox addthis_default_style">-->
+<!--                      <a href="--><?//=$row_setting['facebook_link'] ?><!--" target="_blank">-->
+<!--						<img src="images/Facebook.png" alt="Facebook"  style="width:32px !important;;height:32px !important;" /></a>-->
+<!--                      -->
+<!--                      <a href="--><?//= $row_setting['twitter_link'] ?><!--" target="_blank" >-->
+<!--					<img src="images/twitter.png" alt="Twitter"  style="width:32px !important;;height:32px !important;"  />-->
+<!--						</a>-->
+<!--                      -->
+<!--                      <a href="--><?//= $row_setting['googleplus_link'] ?><!--" target="_blank">-->
 
- <img src="images/Google+.png" alt="Google" style="width:32px !important;;height:32px !important;" />
+                        <?php
+                        $pageURL = $_SERVER['HTTPS'] == 'on' ? 'https://' : 'http://';
+                        $pageURL .= $_SERVER['SERVER_PORT'] != '80' ? $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"] : $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+                        ?>
 
-</a>
+                          <div id="share-buttons">
+                              <!-- Facebook -->
+                              <a href="http://www.facebook.com/sharer.php?u=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
 
+                              <!-- Twitter -->
+                              <a href="http://twitter.com/share?url=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
 
+                              <!-- Google+ -->
+                              <a href="https://plus.google.com/share?url=<?= $pageURL ?>" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
 
-<a href="<?= $row_setting['linkedin_link'] ?>" target="_blank">
+                              <!-- Pinterest -->
+                              <!--    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="http://www.simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a>-->
+                          </div>
 
-<img src="images/linkedin_32.png" alt="linkedin"  style="width:32px !important;;height:32px !important;" />
+<!-- <img src="images/Google+.png" alt="Google" style="width:32px !important;;height:32px !important;" />-->
+<!---->
+<!--</a>-->
+<!---->
+<!---->
+<!---->
+<!--<a href="--><?//= $row_setting['linkedin_link'] ?><!--" target="_blank">-->
+<!---->
+<!--<img src="images/linkedin_32.png" alt="linkedin"  style="width:32px !important;;height:32px !important;" />-->
 
 </a>
                         <div class="atclear"></div>
