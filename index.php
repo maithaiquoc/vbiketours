@@ -362,14 +362,15 @@ $('#CategoryImage').attr("src", path);
 <link rel="stylesheet" href="css/allinone.css" type="text/css">
 <link rel="stylesheet" href="css/css.css" type="text/css">
 <link rel="stylesheet" href="./css/white.css" type="text/css">
+<link rel="image_src" href="http://vbiketours.com/<?=_upload_product_l,$row_detail['photo']?>" />
 <meta name="description" content="Motorbike tours in Viet Nam">
 <meta property="fb:app_id" content="138566025676">
 <meta property="og:site_name" content="Vbiketours">
-<meta property="og:type" content="website">
+<meta property="og:type" content="image/jpeg image/png">
 <meta property="og:url" content="#">
 <meta property="og:title" id="metaTitle" content="<?php echo $row_detail['ten_vi']; ?>">
 <meta property="og:description" content="Motorbike tours in Viet Nam">
-<meta property="og:image" content="src="http://vbiketours.com/<?=_upload_product_l,$row_detail['photo']?>"">
+<meta property="og:image" content="http://vbiketours.com/<?=_upload_product_l,$row_detail['photo']?>">
 <meta property="og:locale" content="en_US">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
