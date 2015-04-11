@@ -1,5 +1,3 @@
-VBIKETOURS
-
 <div id="ja-container" class="wrap ">
 	<div class="main clearfix">
 
