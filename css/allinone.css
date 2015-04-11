@@ -1601,7 +1601,7 @@ border: solid 3px #ffeb00;
 #additional-comments {padding: 36px 0;}
 
 .testimonial { margin: 0; height: 138px; background: #B7EDFF;     padding: 10px 50px;     position: relative;     font-family: Georgia, serif;     color: #666;     border-radius: 5px;         text-shadow: 0 1px 0 #ECFBFF;     background-image: linear-gradient(#CEF3FF, #B7EDFF); }
-.testimonial:before, .testimonial:after {          position: absolute;     font-size: 80px;     line-height: 1;     color: #999;     font-style: normal; }
+.testimonial:before, .testimonial:after {          position: absolute;     font-size: 80px;          color: #999;      }
 .testimonial:before {     top: 0;     left: 10px; }
 .testimonial:after {          right: 10px;     bottom: -0.5em; }
 .arrow-left { position: absolute; top: 50px;     -ms-transform: rotate(90deg); /* IE 9 */
