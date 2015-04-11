@@ -55,7 +55,7 @@ $paging=paging_home($result_tieubieu, $url, $curPage, $maxR, $maxP);
                           <div class="article-main">
                             <div class="article-content">
                                 <blockquote class="testimonial">
-                                    <p style="padding: 10px 20px 10px 20px;"><?=$result_tieubieu[$j]['mota']?></p>
+                                    <p style="padding: 10px 30px 10px 30px;"><?=$result_tieubieu[$j]['mota']?></p>
                                 </blockquote> <div class="arrow-left"></div>
                             </div>
                           </div>
