@@ -54,7 +54,7 @@ $paging=paging_home($result_tieubieu, $url, $curPage, $maxR, $maxP);
                           <div class="article-image"> <span><img src="<?=_upload_hinhanh_l.$result_tieubieu[$j]['photo']?>" alt="<?=_upload_hinhanh_l.$result_tieubieu[$j]['photo']?>" width="150" height="150"></span> </div>
                           <div class="article-main">
                             <div class="article-content">
-                                <blockquote class="testimonial" style="padding: 20px; text-align: justify">
+                                <blockquote class="testimonial" style="padding: 20px; text-align: justify; line-height: 1px">
                                     <?=$result_tieubieu[$j]['mota']?>
                                 </blockquote> <div class="arrow-left"></div>
                             </div>
