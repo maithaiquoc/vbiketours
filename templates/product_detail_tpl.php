@@ -129,7 +129,7 @@ display:none;
                     <div class="sharethis_zone">
                       <hr>
                       <p class="addthis_desc">Share this with your friends</p>
-<!--                      <div class="addthis_toolbox addthis_default_style">-->
+                      <div class="addthis_toolbox addthis_default_style">
 <!--                      <a href="--><?//=$row_setting['facebook_link'] ?><!--" target="_blank">-->
 <!--						<img src="images/Facebook.png" alt="Facebook"  style="width:32px !important;;height:32px !important;" /></a>-->
 <!--                      -->
@@ -168,7 +168,7 @@ display:none;
 <!---->
 <!--<img src="images/linkedin_32.png" alt="linkedin"  style="width:32px !important;;height:32px !important;" />-->
 
-</a>
+<!--</a>-->
                         <div class="atclear"></div>
                       </div>
                     </div>
