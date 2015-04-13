@@ -40,4 +40,3 @@ RewriteCond %{HTTP_REFERER} !^http://vbiketours.com$      [NC]
 RewriteCond %{HTTP_REFERER} !^http://vbiketours.com/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^http://vbiketours.com$      [NC]
 #RewriteRule .*\.(jpg|jpeg|gif|png|bmp||avi)$ - [F,NC]
-
