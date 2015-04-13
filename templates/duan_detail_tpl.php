@@ -52,7 +52,7 @@
 	        <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['photo']?>" class="ag_imageThumb">
 		    </a>
 		    </span>
-             <?php }}else{echo "<p>There is no images here...</p>";}?>
+             <?php }}else{echo "<p>There are no images here...</p>";}?>
            
 	</td>
       </tr>
