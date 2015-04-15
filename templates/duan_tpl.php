@@ -22,6 +22,6 @@
                 } }else echo '<p>Đang cập nhật nội dung, mời bạn xem chuyên mục khác !</p>';
             ?>        
             <div class="clear"></div>
-             <div class="phantrang" ><?=$paging['paging']?></div>         
+             <div class="phantrang" ><?=$paging['paging']?></div>
 </div><!--show-pro-->
 </div>
