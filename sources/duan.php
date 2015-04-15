@@ -104,7 +104,7 @@ $url='hinh-anh/'.$id.'-'.$row_detail["tenkhongdau"].'.html?';
 
 
 
-	$maxR=10;
+	$maxR=20;
 
 
 
@@ -308,7 +308,7 @@ $url='hinh-anh/'.$id.'-'.$row_detail["tenkhongdau"].'.html?';
 
 
 
-			
+
 
 
 
