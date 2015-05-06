@@ -1085,13 +1085,13 @@
 
     function appendDiv(i){
         $('#divTourInfo').append('<div class="rsfcl-caption" id="divTourName'+i+'">'+$('#Tour40'+i).val()+'</div>');
-        $('#divTourInfo').append('<div class="rsfcl-body"><input type="number" onmouseout="setDefault(this.id)" value="1" min="1" id="PeopleAmount'+i+'" class="rsform-input-box" onchange="setTotalPrice();">');
+        $('#divTourInfo').append('<div class="rsfcl-body"><input type="number" value="1" min="1" id="PeopleAmount'+i+'" class="rsform-input-box" onchange="setDefault(this.id); setTotalPrice();">');
         $('#divTourInfo').append('<label class="label label-success" style="margin: 20px 5px 20px 5px; color: white; font-size: 14px;">'+$("#idPrice"+i).val()+' $/person</label>');
         $('#divTourInfo').append('<br/></br>');
     }
 
     function setDefault(id){
-        if($('#'+id).val() == '' || $('#'+id).val() == 0){
+        if($('#'+id).val() < 1){
             $('#'+id).val(1);
         }
     }
