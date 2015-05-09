@@ -227,7 +227,6 @@
             <?php }}?>
           
             <hr class="style-2" style="margin:20px 0;">
-            <div style="text-align:center;">Want to design your own tour? Click <a href="http://xotours.vn/booking/private-tour.html">HERE</a> to go to our Custom Tour Booking Form.</div>
         </div>
         <div class="booking-form-legend">Tell us about yourself</div>
         <div class="rsform-content rsf-contact-group">
