@@ -203,6 +203,23 @@ display:none;
           </div>
         </div>
       </div>
+        <div id="TA_cdswritereviewlg522" class="TA_cdswritereviewlg">
+            <ul id="xbjoj7xO" class="TA_links Rt8v0XMUiT3v">
+                <li id="QlVYjQ1cVEn" class="omHpl3">
+                    <a target="_blank" href="http://www.tripadvisor.com.vn/"><img src="http://www.tripadvisor.com.vn/img/cdsi/img2/branding/medium-logo-12097-2.png" alt="TripAdvisor"/></a>
+                </li>
+            </ul>
+        </div>
+        <script src="http://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=522&amp;locationId=8091156&amp;lang=vi&amp;border=true&amp;display_version=2"></script>
+
+        <div id="TA_linkingWidgetRedesign181" class="TA_linkingWidgetRedesign">
+            <ul id="q5WFU2r" class="TA_links rF7ifXkEvP">
+                <li id="rUM8y9vm3Q3V" class="hDleLvt">
+                    <a target="_blank" href="http://www.tripadvisor.com.vn/"><img src="http://www.tripadvisor.com.vn/img/cdsi/partner/tripadvisor_logo_115x18-15079-2.gif" alt="TripAdvisor"/></a>
+                </li>
+            </ul>
+        </div>
+        <script src="http://www.jscache.com/wejs?wtype=linkingWidgetRedesign&amp;uniq=181&amp;locationId=8091156&amp;lang=vi&amp;border=true&amp;display_version=2"></script>
     </div>
     <!-- RIGHT COLUMN--> 
   </div>
