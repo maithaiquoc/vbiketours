@@ -203,23 +203,17 @@ display:none;
           </div>
         </div>
       </div>
-        <div id="TA_cdswritereviewlg522" class="TA_cdswritereviewlg">
-            <ul id="xbjoj7xO" class="TA_links Rt8v0XMUiT3v">
-                <li id="QlVYjQ1cVEn" class="omHpl3">
-                    <a target="_blank" href="http://www.tripadvisor.com.vn/"><img src="http://www.tripadvisor.com.vn/img/cdsi/img2/branding/medium-logo-12097-2.png" alt="TripAdvisor"/></a>
-                </li>
-            </ul>
+        <div id="CDSWIDWRM" style="margin:0; padding:0; width:240px; border:none; background-color:#589442; overflow:hidden; height:auto; position:relative; ">
+            <div style="padding:13px 11px;background-color:#fff;  border: 1px solid #589442; position:relative; ">
+                <div style="margin:3px 0 3px; padding:0 0 8px; overflow:hidden; border-bottom:1px solid #CCCCCC; border-top:none; border-left:none; border-right:none; text-align:center;">
+                    <a target="_blank" href="http://www.tripadvisor.co.uk/"><img src="http://www.tripadvisor.co.uk/img/cdsi/img2/branding/medium-logo-12096-2.png" alt="TripAdvisor" style="border:none;"/></a>
+                </div>
+                <div style="margin:0; padding:10px 0 8px; border:none; font:bold 14px Arial,Verdana,Tahoma,'Bitstream Vera Sans',sans-serif; color:#2c2c2c; text-align:center; line-height:normal; letter-spacing:0">
+                    Review Vbiketours </div>
+                <div style="margin:0px 0 0 0; padding:6px 0; border:none; background-color:none; white-space:nowrap;  text-align:center; margin-left:auto; margin-right:auto; position:relative; ">
+                    <input type="button" onclick="window.open('https://www.tripadvisor.co.uk/UserReview-g293925-d8091156-m12096-Vbiketours-Ho_Chi_Minh_City.html')" style="border:1px solid #EA9523; border:active:border:none;background:url(http://e2.tacdn.com/img2/sprites/yellow-button.png) 0 0 repeat-x #EA9523;  cursor:pointer; text-decoration:none; outline:none; font: bold 13px Arial,Tahoma,'Bitstream Vera Sans',sans-serif; color:#000; letter-spacing:0; vertical-align:center; text-align:center; width:auto; height:27px; position:relative;" value="Write Review"/> </div>
+            </div>
         </div>
-        <script src="http://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=522&amp;locationId=8091156&amp;lang=vi&amp;border=true&amp;display_version=2"></script>
-
-        <div id="TA_linkingWidgetRedesign181" class="TA_linkingWidgetRedesign">
-            <ul id="q5WFU2r" class="TA_links rF7ifXkEvP">
-                <li id="rUM8y9vm3Q3V" class="hDleLvt">
-                    <a target="_blank" href="http://www.tripadvisor.com.vn/"><img src="http://www.tripadvisor.com.vn/img/cdsi/partner/tripadvisor_logo_115x18-15079-2.gif" alt="TripAdvisor"/></a>
-                </li>
-            </ul>
-        </div>
-        <script src="http://www.jscache.com/wejs?wtype=linkingWidgetRedesign&amp;uniq=181&amp;locationId=8091156&amp;lang=vi&amp;border=true&amp;display_version=2"></script>
     </div>
     <!-- RIGHT COLUMN--> 
   </div>
