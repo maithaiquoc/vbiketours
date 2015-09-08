@@ -78,7 +78,7 @@ $d->reset();
                         <span style="color: #ffffff;"> <?=str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($row_detail["dksudung_$lang"],"")) ?></span></strong></a></p>
                         <p class="notice-paragraph-white">
                       
-                          <?=str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($row_detail["chitiet_$lang"],"")) ?>
+                          <?=$row_detail["chitiet_$lang"] ?>
                         </p>
                         <p></p>
                       </div>
