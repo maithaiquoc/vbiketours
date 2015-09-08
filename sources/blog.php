@@ -40,7 +40,7 @@ if(isset($_GET['id'])){
 	$curPage = isset($_GET['p']) ? $_GET['p'] : 1;
 	
 	if(isset($_GET['idl']) || isset($_GET['idcat'])){
-	$url='blog/'.@$cat1.@$cat2;	
+	$url='blog/'.@$cat1.@$cat2;
 	}
 	else{
 		$url='blog.html/';
