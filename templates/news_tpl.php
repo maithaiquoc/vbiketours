@@ -39,7 +39,7 @@
                        
                     
                     	</ul>
-						<div class="phantrang" style="text-align:center" ><?=$paging['paging']?></div>   
+						<div class="phantrang" style="text-align:center" ><?=$paging['paging']?></div>
                 </div>        		     
         	</div>
 			
