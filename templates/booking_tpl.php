@@ -334,7 +334,7 @@
         </div>
         <div class="rsform-content">
             <div class="rsfc-line">
-                <div class="rsfcl-caption">&nbsp;</div>
+                <div class="rsfcl-caption" id="divNoticeBooking">&nbsp;</div>
                 <div class="rsfcl-body"><button type="button" name="form[Review]" id="Review" class="review-btn stdButton regular gayblue rsform-button" style="font-weight: bold !important;">Review &amp; Submit</button></div>
             </div>
         </div>
@@ -1084,9 +1084,18 @@
 
     function appendDiv(i){
         $('#divTourInfo').append('<div class="rsfcl-caption" id="divTourName'+i+'">'+$('#Tour40'+i).val()+'</div>');
-        $('#divTourInfo').append('<div class="rsfcl-body"><input type="number" value="1" min="1" id="PeopleAmount'+i+'" class="rsform-input-box" onchange="setDefault(this.id); setTotalPrice();">');
-        $('#divTourInfo').append('<label class="label label-success" style="margin: 20px 5px 20px 5px; color: white; font-size: 14px;">'+$("#idPrice"+i).val()+' $/person</label>');
+        $('#divTourInfo').append('<input type="number" title="How many people do you go with?" value="1" min="1" id="PeopleAmount'+i+'" class="rsform-input-box txtAmount" onchange="setDefault(this.id); setTotalPrice();">');
+        $('#divTourInfo').append('<input type="datetime-local" title="When is your departure?" id="txtDateTime'+i+'" class="txtDeparture" value="<?php echo date('Y-m-d').'T'.date('H:i'); ?>" style="margin: 0 5px;" onchange="setDefaultDate(this.id);">');
+        $('#divTourInfo').append('<label class="label label-success" style="margin: 0 5px; color: white; font-size: 14px;">'+$("#idPrice"+i).val()+' $/person</label>');
         $('#divTourInfo').append('<br/></br>');
+    }
+
+    function setDefaultDate(id){
+        var dt = $("#"+id).val();
+        if(dt == ''){
+            var dt = '<?php echo date('Y-m-d').'T'.date('H:i'); ?>';
+            $("#"+id).val(dt);
+        }
     }
 
     function setDefault(id){
@@ -1119,12 +1128,16 @@
         $('#Total').val(USD);
     }
 
+    var myCurrentDateTime = Array();
     $('#Review').click(function(){
+        $("#divNoticeBooking").html('');
         var total = setTotalPrice(1);
         var tName = "";
         for(var i = 0; i < myArr.length; i++){
-                tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people), ";
+            tName += $('#Tour40'+myArr[i]).val() + " (" + $('#PeopleAmount'+myArr[i]).val() + " people, "+ $('#txtDateTime'+myArr[i]).val().replace('T', ' ') +"), ";
+            myCurrentDateTime[i] = $('#txtDateTime'+myArr[i]).val();
         }
+
         //check chosen tours
         if(total == 0){
             alert("Please choose at least a tour...");
@@ -1151,9 +1164,13 @@
                 }
                 else{
                     if(!$('#Payment0').is(':checked') && !$('#Payment1').is(':checked')){
+                        for(var i = 0; i < myArr.length; i++){
+                            $('#txtDateTime'+myArr[i]).val(myCurrentDateTime[i]);
+                        }
                         alert("Please choose a payment method...");
                     }
                     else{
+                        $("#divNoticeBooking").html('<b>Resolving, please wait...</b>');
                         var method = "Paypal payment";
                         if($('#Payment0').is(':checked')){
                             method = "Direct payment";
