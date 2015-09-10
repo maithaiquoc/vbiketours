@@ -39,3 +39,7 @@ content: '\f1d8';
     width: 100px;
     padding-bottom: 2px;
 }
+
+#lbImage{
+    background-position: 50%;
+}
