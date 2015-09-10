@@ -47,9 +47,9 @@
 				foreach($album_hinh as $item_ha){
 		?>	
     <span class="ag_thumbclassic">
-            <a href="<?=_upload_duan_l,$item_ha['photo']?>" title="<?=_upload_duan_l,$item_ha['photo']?>" class="" rel="lightbox[AdmirorGallery090]" target="_blank">
+            <a href="<?=_upload_duan_l,$item_ha['photo']?>" title="Click to view" class="" rel="lightbox[AdmirorGallery090]" target="_blank">
             
-	        <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['photo']?>" class="ag_imageThumb">
+	        <img src="<?=_upload_duan_l,$item_ha['thumb']?>" alt="<?=_upload_duan_l,$item_ha['thumb']?>" class="ag_imageThumb">
 		    </a>
 		    </span>
              <?php }}else{echo "<p>There are no images here...</p>";}?>
