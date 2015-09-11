@@ -1,7 +1,7 @@
 <?php if(!defined('_lib')) die("Error");
-$config_url='localhost:81/VBIKETOURS';
+$config_url = 'vbiketours.com';
 $config['database']['servername'] = 'localhost';
-$config['database']['username'] = 'root';
-$config['database']['password'] = '';
-$config['database']['database'] = 'vbiketours';
+$config['database']['username'] = 'vbiketours_2411';
+$config['database']['password'] = '12345678P';
+$config['database']['database'] = 'vbiketours_2411';
 ?>

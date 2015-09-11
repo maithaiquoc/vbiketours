@@ -454,7 +454,7 @@ $('#CategoryImage').attr("src", path);
 
         <ul class="nav pull-right help-menu list-unstyled">
 
-            <li class="list-your-space pull-left"> <a id="list-your-space" class="btn btn-special" href="<?=$row_setting['hotline']?>"><?=$row_setting['hotline']?></a> </li>
+            <li class="list-your-space pull-left"> <a id="list-your-space" class="btn btn-special" href="contact.html"><?=$row_setting['hotline']?></a> </li>
         </ul>
         <?php include _template."layout/top_menu.php"; ?>
 
