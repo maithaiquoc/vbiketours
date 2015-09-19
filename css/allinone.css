@@ -645,7 +645,7 @@ div.ja-moduletable ul li, div.ja-module ul li{background-position:2px 6px;paddin
 .main{}
 .ja-box{padding-bottom:10px;padding-top:10px;}
 #ja-wrapper{}
-#ja-container{background:white !important;width:996px;margin:0 auto;padding:20px 10px 10px 10px;position:relative;z-index:5;border:solid 1px #CCC;}
+#ja-container{background:white !important;width:996px;margin:0 auto;padding:20px 10px 10px 10px;position:relative;z-index:5;}
 #ja-container .main{min-height:300px;padding:0;}
 #ja-container #ja-main{}
 #ja-container.ja-r1{}
@@ -1170,8 +1170,8 @@ div#more-content-seo{text-align:left;width:996px;}
 div#more-content-seo p{margin:10px 0;font-size:10px;}
 div#more-content-seo li{margin:10px 44px;font-size:10px;}
 /* extra for JA News Sticker */
-.ja_cfl_rss_overall{padding:0px;margin:0px 0px;background:white;border:solid 1px #CCC;border-left:none;}
-.ja_cfl_rss_body{height:36px !important;padding:0;text-decoration:none;overflow:hidden;position:relative;margin-left:1px;background:transparent;}
+.ja_cfl_rss_overall{padding:0px;margin:0px 0px;background:white;border-left:none;}
+.ja_cfl_rss_body{padding:0;text-decoration:none;overflow:hidden;position:relative;margin-left:1px;background:transparent;}
 .ja_cfl_rss_div{text-align:center;vertical-align:middle;width:100% !important;}
 .ja_cfl_rss_div a{margin:0;padding:0;background:none !important;color:#303030 !important;font-weight:bold;}
 .ja_cfl_rss_title{float:left;font-size:15px;background:#d63588;width:72px;height:36px;line-height:36px;color:#ffeb00;padding:0px 8px;margin-left:0px;font-weight:bold;text-align:center;}
@@ -1600,7 +1600,7 @@ border: solid 3px #ffeb00;
 
 #additional-comments {padding: 36px 0;}
 
-.testimonial { margin: 0; height: 138px; background: #B7EDFF;     padding: 10px 50px;     position: relative;     font-family: Georgia, serif;     color: #666;     border-radius: 5px;         text-shadow: 0 1px 0 #ECFBFF;     background-image: linear-gradient(#CEF3FF, #B7EDFF); }
+.testimonial { margin: 0; height: 138px;     padding: 10px 50px;     position: relative;     font-family: Georgia, serif;     color: #666;     border-radius: 5px;         text-shadow: 0 1px 0 #ECFBFF;      }
 .testimonial:before, .testimonial:after {          position: absolute;     font-size: 80px;          color: #999;      }
 .testimonial:before {     top: 0;     left: 10px; }
 .testimonial:after {          right: 10px;     bottom: -0.5em; }

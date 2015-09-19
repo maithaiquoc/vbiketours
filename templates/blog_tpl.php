@@ -226,6 +226,10 @@ border-bottom: 1px dashed #ccc;
 <div id="ja-container" class="wrap ja-r1">
   <div class="main clearfix">
     <div id="ja-mainbody" style="width:90%">
+        <ul class="breadcrumb">
+            <li><a href="">Home</a></li>
+            <li><a href="/<?=$com?>.html"><?=ucfirst($com)?></a></li>
+        </ul>
       <table>
         <tr id="bodyrow"> 
           
@@ -255,7 +259,7 @@ border-bottom: 1px dashed #ccc;
 
 																	
 
-								<h2>    <a class="blog_name"href="news/<?=$tintuc[$i]['id']?>-<?=$tintuc[$i]['tenkhongdau']?>.html"><?=$tintuc[$i]['ten_'.$lang]?></a> </h3>
+								<h3>    <a class="blog_name"href="news/<?=$tintuc[$i]['id']?>-<?=$tintuc[$i]['tenkhongdau']?>.html"><?=$tintuc[$i]['ten_'.$lang]?></a> </h3>
 
 								<p class="date">
 

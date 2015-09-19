@@ -63,7 +63,7 @@
         <div class="box_info">
         	<h1><?=$row_title['ten_'.$lang]?></h1>
             <div class="hotline">
-            		<?php $array_hotline=explode(",", $hotline['dienthoai']); for($i=0,$count_hl=count($array_hotline);$i<$count_hl;$i++) { echo $array_hotline[$i].'<br/>'; } ?>  
+            		<?php $array_hotline=explode(",", $hotline['dienthoai']); for($i=0,$count_hl=count($array_hotline);$i<$count_hl;$i++) { echo $array_hotline[$i].'<br/>'; } ?>
             </div>
             Email: nvkiem33@yahoo.com.vn
         </div>

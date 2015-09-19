@@ -4,7 +4,7 @@
         <div class="language-curr-picker clearfix">
 	   <div class="col-md-4">
 
-        <div class="col-sm-4">
+        <div class="col-xs-12 col-sm-4">
        
 <?php
 
@@ -62,7 +62,7 @@ for($j=0,$count_cc=count($result_quangcao1);$j<$count_cc;$j++)
 	   <?php }}?>
 	   </ul>
       </div>
-      <div class="col-sm-4 hide-sm">
+      <div class="col-sm-4">
       <?php
 
 $d->reset();
@@ -100,8 +100,8 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
        
       </div>
       </div>
-      <div class="col-md-2  hide-sm">
-        <h5>Company</h5>
+      <div class="col-md-2">
+        <h5><b>Company</b></h5>
         <ul class="unstyled list-layout">
           <li><a href="about-us.html" class="link-contrast">About Us</a></li>
           <li><a href="testimonials.html" class="link-contrast">Testimonials</a></li>
@@ -113,8 +113,8 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
           <li><a href="contact.html" class="link-contrast">Contact</a></li>
         </ul>
       </div>
-      <div class="col-md-2 hide-sm">
-        <h5>Our Tour</h5>
+      <div class="col-md-2">
+        <h5><b>Our Tour</b></h5>
         <ul class="unstyled list-layout">
         <?php 
 			$sql_dep="select ten_$lang, spmoi, id,tenkhongdau from #_product where hienthi =1 and noibat>0 order by stt,id desc limit 9";
@@ -133,8 +133,8 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
         <?php }}?>
         </ul>
       </div>
-      <div class="col-md-2 hide-sm">
-        <h5>News</h5>
+      <div class="col-md-2">
+        <h5><b>News</b></h5>
         <ul class="unstyled list-layout">
          <?php
 
@@ -177,7 +177,7 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
       
       </div>
     </div>
-    <div class="col-sm-12 row-space-4 row-space-top-4 show-sm">
+    <div class="col-sm-12 row-space-4 row-space-top-4">
       <ul class="unstyled list-layout list-inline text-center h5">
         <li><a href="about-us.html" class="link-contrast">About Us</a></li>
           <li><a href="testimonials.html" class="link-contrast">Testimonials</a></li>
@@ -191,9 +191,9 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
       </ul>
    
     </div>
-    <hr class="footer-divider row-space-top-8 row-space-4 hide-sm">
+    <hr class="footer-divider row-space-top-8 row-space-4">
     <div class="social-media text-center">
-      <h5 class="row-space-4 hide-sm">Join Us On</h5>
+      <h5 class="row-space-4">Join Us On</h5>
       <ul class="unstyled list-layout list-inline">
         <?php
 

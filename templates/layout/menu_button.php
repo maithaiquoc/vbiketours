@@ -31,11 +31,11 @@
 </ul></li>
 
 </ul>
-			    <button type="submit" class="search-button form-inline btn btnour-primary btn-large" id="submit_location" style="width: 150px;">
-                <a href="booking-now.html">Booking Now </a></button>
                 <!--<input type="text" class="form-inline location input-large input-contrast" autocomplete="off" id="location" name="location" placeholder="Where do you want to go?">-->
-                   <input type="text" class="form-inline location input-large input-contrast" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Tìm kiếm' ) this.value=''" placeholder=""/>
-                <p id="enter_location_error_message" class="bad hide"> Please set location </p>
+
+                  <input type="text" style="margin-left: 5px; float: left; width: 340px;" class="form-inline location input-large input-contrast" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Tìm kiếm' ) this.value=''" placeholder=""/>
+                  <input  value="Search" name="sreachAct" id="btnSearch" class="search-button form-inline btn btn-primary btn-large" type="submit" style="width: 150px; float: left;"/>
+                  <!--                <p id="enter_location_error_message" class="bad hide"> Please set location </p>-->
               </div>
 
 
@@ -61,7 +61,6 @@
 <!--              </div>-->
 
             <!--  <button type="submit" class="search-button form-inline btn btn-primary btn-large" id="submit_location"> Search </button>-->
-            <input  value="Search" name="sreachAct" id="btnSearch" class="search-button form-inline btn btn-primary btn-large" type="submit" style="width: 150px;"/>
             </form>
           <?php /*?>   <form name="frm_search" id="frm_search" method="get" action="tim-kiem/" onsubmit="return false;">
               <input type="input" class="	" id="keyword" name="keyword" value="" onkeypress="doEnter(event)" onblur="if(this.value=='') this.value='Search'" style="color:#888;width: 163px;" onfocus="if(this.value =='Tìm ki?m' ) this.value=''" />

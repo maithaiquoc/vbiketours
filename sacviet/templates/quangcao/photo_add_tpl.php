@@ -205,7 +205,7 @@ height:"500px",
 
 
 
-    <br/> 
+    <br/>
 <b>No. </b> <input type="text" name="stt<?=$i?>" value="1" style="width:30px" />	<br />
 	<b>Show</b> <input type="checkbox" name="hienthi<?=$i?>" checked="checked" /> <br /><br />
 	

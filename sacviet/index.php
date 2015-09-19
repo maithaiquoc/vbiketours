@@ -12,7 +12,7 @@
 
 
 
-	include_once _lib."config.php";
+	include_once "../config.php";
 
 	include_once _lib."constant.php";
 

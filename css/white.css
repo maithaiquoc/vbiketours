@@ -25,7 +25,7 @@ form#searchForm{border-top:1px solid #e5e5e5;}
 .searchintro{border-bottom:1px solid #e5e5e5;}
 #component-contact #emailForm{border-top:1px solid #e5e5e5;}
 .leading{border-bottom:1px solid #e5e5e5;}
-.article_row{border-bottom:1px solid #e5e5e5;width: 96%;}
+.article_row{width: 96%;}
 .article-tools{color:#656565;}
 .article-section, .article-category{color:#656565;}
 .createby{background-image:url(../../images/white/icon-user.gif);}

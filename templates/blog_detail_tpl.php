@@ -455,9 +455,48 @@ text-transform: capitalize;">
 
                 
               </ul>
-            </div>        
-            
-            </td>
+            </div>
+            <div id="categories-2" class="widget widget_categories"><br/>
+              <div class="widget-title">
+                  <h3>Most viewed</h3>
+              </div>
+              <ul>
+                  <?php
+                  $d->reset();
+                  $sql_cat="select ten_$lang,tenkhongdau,id from #_blog where hienthi=1 order by luotxem DESC limit 5";
+                  $d->query($sql_cat);
+                  $blog_cat = $d->result_array();
+                  if(count($blog_cat)>0){
+                      for($i=0,$count_cat=count($blog_cat);$i<$count_cat;$i++){
+                          ?>
+                          <li class="cat-item cat-item-28"><a href="news/<?=$blog_cat[$i]['id']?>-<?=$blog_cat[$i]['tenkhongdau']?>.html"><?=$blog_cat[$i]["ten_$lang"]?></a> </li>
+                      <?php
+                      }
+                  }
+                  ?>
+              </ul>
+          </div>
+            <div id="categories-2" class="widget widget_categories"><br/>
+              <div class="widget-title">
+                  <h3>Related news</h3>
+              </div>
+              <ul>
+                  <?php
+                  $d->reset();
+                  $sql_cat="select ten_$lang,tenkhongdau,id from #_blog where hienthi=1 and id_item='".$tintuc_detail["id_item"]."' order by ngaytao DESC limit 5";
+                  $d->query($sql_cat);
+                  $blog_cat = $d->result_array();
+                  if(count($blog_cat)>0){
+                      for($i=0,$count_cat=count($blog_cat);$i<$count_cat;$i++){
+                          ?>
+                          <li class="cat-item cat-item-28"><a href="news/<?=$blog_cat[$i]['id']?>-<?=$blog_cat[$i]['tenkhongdau']?>.html"><?=$blog_cat[$i]["ten_$lang"]?></a> </li>
+                      <?php
+                      }
+                  }
+                  ?>
+              </ul>
+          </div>
+          </td>
           <!-- / Right Sidebar --> 
           
         </tr>

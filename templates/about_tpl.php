@@ -2,6 +2,10 @@
 	<div class="main clearfix">
 
 		<div id="ja-mainbody" style="width:100%">
+            <ul class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="/<?=$com?>.html"><?=ucfirst(str_replace('-', ' ', $com))?></a></li>
+            </ul>
 			<!-- CONTENT -->
 <div id="ja-main" style="width:100%">
 <div class="inner clearfix">

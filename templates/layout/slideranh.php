@@ -1,6 +1,5 @@
 
 <?php
-
 	$d->reset();
 
 	$sql_slider = "select photo,link from #_slider where hienthi=1 and com='slider' order by stt,id desc";
@@ -8,7 +7,6 @@
 	$d->query($sql_slider);
 
 	$result_slider=$d->result_array();
-
 
 
 ?>
@@ -22,8 +20,8 @@
 		for($i=0,$count_slider=count($result_slider);$i<$count_slider;$i++){
 
 	?>
-                <div>
-                    <img u="image" src2="<?=_upload_hinhanh_l.$result_slider[$i]['photo']?>" width="1200" height="600" />
+                <div onclick="window.open('<?=$result_slider[$i]['link']?>')">
+                    <img id="image_<?=$i?>" value="<?=$result_slider[$i]['link']?>" u="image" src2="<?=_upload_hinhanh_l.$result_slider[$i]['photo']?>" width="1200" height="600" />
                 </div>
 
                   <?php } ?>

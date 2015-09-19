@@ -212,7 +212,7 @@ function save_photo(){
 						$data['com'] = 'quangcao';
 
 						$data['link'] = $_POST['link'.$i];
-							$data['mota'] = $_POST['mota'];
+                        $data['mota'] = $_POST['mota'];
 
 						$data['ten'] = $_REQUEST['ten_vi'.$i];					
 

@@ -3,6 +3,10 @@
 <div id="ja-container" class="wrap ">
   <div class="main clearfix">
     <div id="ja-mainbody" style="width:100%">
+        <ul class="breadcrumb">
+            <li><a href="">Home</a></li>
+            <li><a href="/<?=$com?>.html"><?=ucfirst($com)?></a></li>
+        </ul>
       <!-- CONTENT -->
       <div id="ja-main" style="width:100%">
         <div class="inner clearfix">
@@ -56,7 +60,7 @@ $paging=paging_home($result_tieubieu, $url, $curPage, $maxR, $maxP);
                             <div class="article-content">
                                 <blockquote class="testimonial" style="padding: 20px; text-align: justify; line-height: 1px">
                                     <?=$result_tieubieu[$j]['mota']?>
-                                </blockquote> <div class="arrow-left"></div>
+                                </blockquote>
                             </div>
                           </div>
                         </div>

@@ -4,7 +4,7 @@ $sql_dep="select ten_vi,ten_en,photo,link from #_video where hienthi=1 and noiba
 	$tintuc=$d->result_array();
 ?>
 
-<div class="hide-sm" id="belong-anywhere-wrapper">
+<div id="belong-anywhere-wrapper">
 <div id="belong-anywhere-container">
 <link href="css/skitter.styles.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
@@ -40,38 +40,41 @@ $sql_dep="select ten_vi,ten_en,photo,link from #_video where hienthi=1 and noiba
 }
 </style>
 <!--<link rel="stylesheet" type="text/css" href="./css/video.css">-->
-  <div id="slider">
-            <div class="box_skitter box_skitter_medium">
-                <ul>
-                          <?php
-			   if(count($tintuc)>0){
-			   for($i=0,$count_tintuc=count($tintuc);$i<$count_tintuc;$i++){
-		   ?>
-                    <li>      
-                    <a href="<?=$tintuc[$i]['link']?>" class="html5lightbox" title=" <?=$tintuc[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480"><img src="<?=_upload_hinhanh_l.$tintuc[$i]['photo']?>" alt=" <?=$tintuc[$i]['ten_'.$lang]?>" height="200" width="300"></a></li><i class="icon icon-video-play"></i>
-                    <?php } }else echo '<p>Content update.</p>';  ?>   
-                </ul>
-            </div><!--box_skitter-->
-            
-        </div>
+    <div class="div-video-play" onclick="window.location.href = $('.image a').attr('href');"></div>
+    <div id="slider">
+        <div class="box_skitter box_skitter_medium">
+            <ul>
+                      <?php
+           if(count($tintuc)>0){
+           for($i=0,$count_tintuc=count($tintuc);$i<$count_tintuc;$i++){
+       ?>
+                <li>
+                    <a href="<?=$tintuc[$i]['link']?>" class="html5lightbox" title=" <?=$tintuc[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480">
+                        <img src="<?=_upload_hinhanh_l.$tintuc[$i]['photo']?>" alt=" <?=$tintuc[$i]['ten_'.$lang]?>" height="200" width="300">
+                    </a>
+                </li>
+                <?php } }else echo '<p>Content update.</p>';  ?>
+            </ul>
+        </div><!--box_skitter-->
+    </div>
   
   <!--<script type="text/javascript" src="../html5gallery/html5gallery.js"></script>
 --> <!-- <div style="display:none;margin:0 auto;" class="html5gallery" data-skin="gallery" data-width="1366" data-height="472" data-resizemode="fill">
-	
-	
-		
-	
+
+
+
+
 		<a href="http://www.youtube.com/embed/YE7VzlLtp-4">
         <img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Youtube Video"></a>
-		
-	
+
+
 		<a href="http://player.vimeo.com/video/1084537?title=0&amp;byline=0&amp;portrait=0">
         <img src="images/Big_Buck_Bunny.jpg" alt="Vimeo Video"></a>
-	
+
 	</div>
-  </div>--> 
+  </div>-->
   <!--<ul class="list-unstyled" id="belong-anywhere-slideshow">
-   
+
       <li class="active" id="belong-anywhere">
         <div class="row row-table row-full-height text-center">
           <div class="col-12 col-middle">
@@ -88,9 +91,9 @@ $sql_dep="select ten_vi,ten_en,photo,link from #_video where hienthi=1 and noiba
             <a id="belo-play-button" class="text-contrast text-jumbo link-reset"> <i class="icon icon-video-play"></i> </a> </div>
         </div>
       </li>
- 
+
       <li id="create-slide">
-        
+
         <a href="https://create.airbnb.com/">
          <img src="./upload/create-02-ea0613ad2b71f988070c439fbe6656f0.png" data-original="https://a1.muscache.com/airbnb/static/homepages/create-02-ea0613ad2b71f988070c439fbe6656f0.png" class="col-center create-hero lazy" style="display: block;">
         <div class="row row-table row-space-top-6">
@@ -104,12 +107,12 @@ $sql_dep="select ten_vi,ten_en,photo,link from #_video where hienthi=1 and noiba
         </div>
         </a> </li>
     </ul>
-    
+
     <a href="#" class="slideshow-scroll slideshow-scroll-prev link-reset text-contrast text-jumbo">
-     <i class="icon icon-chevron-left"></i> </a> 
+     <i class="icon icon-chevron-left"></i> </a>
      <a href="#" class="slideshow-scroll slideshow-scroll-next link-reset text-contrast text-jumbo"> <i class="icon icon-chevron-right"></i> </a>
- 
-  </div>--> 
+
+  </div>-->
   <!--<div id="belong-video-player" class="fullscreen-video-player hidden">
     <div class="row row-table row-full-height">
       <div class="col-12 col-middle">
@@ -129,6 +132,5 @@ $sql_dep="select ten_vi,ten_en,photo,link from #_video where hienthi=1 and noiba
         </video>
         <i id="play-button-belo" class="media-button icon icon-video-play hide"></i> <a id="close-fullscreen-belo"> <i class="icon icon-remove"></i> </a> </div>
     </div>
-  </div>--> 
-  
+  </div>-->
 </div>

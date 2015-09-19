@@ -7,7 +7,7 @@ if(isset($_GET['id'])){
 	$id =  addslashes($_GET['id']);
 	$sql_lanxem = "UPDATE #_blog SET luotxem=luotxem+1  WHERE id ='".$id."'";
 	$d->query($sql_lanxem);			
-	$sql = "select id,ten_$lang,mota_$lang,noidung_$lang,ngaytao,photo,nguoitao,tenkhongdau from #_blog where hienthi=1 and id='".$id."'";
+	$sql = "select id,ten_$lang,mota_$lang,noidung_$lang,ngaytao,photo,nguoitao,tenkhongdau,id_item from #_blog where hienthi=1 and id='".$id."'";
 	$d->query($sql);
 	$tintuc_detail = $d->fetch_array();
 	$title_bar=$tintuc_detail["ten_$lang"].' - ';
