@@ -83,12 +83,12 @@
                                             <?php
                                             if(!empty($result_tintuc)){
                                                 foreach($result_tintuc as $item_ha){ ?>
-                                                    <span class="ag_thumbclassic col-lg-5 spanPhotoCollection">
+                                                    <div class="ag_thumbclassic col-lg-5 spanPhotoCollection">
                                                         <a href="<?=_upload_duan_l,$item_ha['photo']?>" title="Click to view" class="" rel="lightbox[AdmirorGallery090]" target="_blank">
-                                                            <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['ten']?>" class="ag_imageThumb img-responsive">
+                                                            <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['ten']?>" class="img-responsive">
                                                         </a>
                                                         <p class="pPhotoCollection"><a href="/photos/<?=$item_ha['id']?>-<?=$item_ha['tenkhongdau']?>.html"><?=$item_ha['ten_'.$lang]?></a></p>
-                                                    </span>
+                                                    </div>
                                                 <?php }}else{echo "<p class='text-center'>There are no images here...</p>";}?>
 
                                         </td>
