@@ -62,10 +62,12 @@ $paging=paging_home($result_tieubieu, $url, $curPage, $maxR, $maxP);
                                     <?=$result_tieubieu[$j]['mota']?>
                                 </blockquote>
                             </div>
+                          <div class="clear"></div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="clear"></div>
                     <?php } }?>
                   </div>
                 </div>

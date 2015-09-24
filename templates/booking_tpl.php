@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 </head>
-<div class="hide-sm" id="belong-anywhere-wrapper">
+<div id="belong-anywhere-wrapper">
   <div id="ja-container" class="wrap ">
 	<div class="main clearfix">
 

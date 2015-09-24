@@ -35,14 +35,14 @@ $result_tieubieu=$paging['source'];?>
         for($j=0,$count_cc=count($result_tieubieu);$j<$count_cc;$j++){$index += 1;
             ?>
             <?php if($result_tieubieu[$j]['size']==1){?>
-                <li class="col-xs-12 col-md-3 col-lg-3 row-space-4 transition-delay-100">
+                <li class="col-xs-12 col-sm-12 col-md-3 col-lg-3 row-space-4 transition-delay-100">
                     <a href="tour/<?=$result_tieubieu[$j]['id']?>-<?=$result_tieubieu[$j]['tenkhongdau']?>.html" class="darken-on-hover-container community-photo-card traveling-card panel-image media-photo link-reset text-center aTourLink">
                         <div style="background:url(<?=_upload_product_l.$result_tieubieu[$j]['photo']?>) no-repeat" class="media-cover background-traveling-card-lazy darken-on-hover"></div>
                         <div class="row row-table row-full-height">
                             <div class="col-sm-12 col-center col-bottom">
                                 <div class="divTourDes">
                                     <div class="h2 text-center text-contrast strong"> <?=catchuoi($result_tieubieu[$j]["ten_$lang"],420)?> </div>
-                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),100) ?> <br>
+                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),87) ?> <br>
                                 </div>
                             </div>
                         </div>
@@ -50,42 +50,42 @@ $result_tieubieu=$paging['source'];?>
                     </a>
                 </li>
             <?php }else if($result_tieubieu[$j]['size']==2){?>
-                <li class="col-xs-12 col-md-6 col-lg-6 row-space-4 transition-delay-700">
+                <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6 row-space-4 transition-delay-700">
                     <a href="tour/<?=$result_tieubieu[$j]['id']?>-<?=$result_tieubieu[$j]['tenkhongdau']?>.html" class="darken-on-hover-container panel-image media-photo link-reset community-photo-card hosting-card text-center aTourLink">
                         <div class="media-cover background-hosting-card-lazy darken-on-hover background-hosting-card"  style="background:url(<?=_upload_product_l.$result_tieubieu[$j]['photo']?>) no-repeat;"></div>
                         <div class="row row-table row-full-height">
-                            <div class="col-sm-10 col-center col-bottom">
+                            <div class="col-sm-12 col-center col-bottom">
                                 <div class="divTourDes">
                                     <div class="h2 text-center text-contrast strong"> <?=catchuoi($result_tieubieu[$j]["ten_$lang"],420)?> </div>
-                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),90) ?> <br>
+                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),87) ?> <br>
                                 </div>
                             </div>
                         </div>
                         <div class="card-header text-contrast text-center strong darken-on-hover"><?=number_format($result_tieubieu[$j]["gia"],0,",",".")?> $ </div>
                     </a> </li>
             <?php }else if($result_tieubieu[$j]['size']==3){?>
-                <li class="col-xs-12 col-md-12 col-lg-9 row-space-4 transition-delay-700">
+                <li class="col-xs-12 col-sm-12 col-md-12 col-lg-9 row-space-4 transition-delay-700">
                     <a href="tour/<?=$result_tieubieu[$j]['id']?>-<?=$result_tieubieu[$j]['tenkhongdau']?>.html" class="darken-on-hover-container panel-image media-photo link-reset community-photo-card hosting-card text-center aTourLink">
                         <div class="media-cover background-hosting-card-lazy darken-on-hover background-hosting-card"  style="background:url(<?=_upload_product_l.$result_tieubieu[$j]['photo']?>) no-repeat"></div>
                         <div class="row row-table row-full-height">
                             <div class="col-sm-12 col-center col-bottom">
                                 <div class="divTourDes">
                                     <div class="h2 text-center text-contrast strong"> <?=catchuoi($result_tieubieu[$j]["ten_$lang"],420)?> </div>
-                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),100) ?> <br>
+                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),87) ?> <br>
                                 </div>
                             </div>
                         </div>
                         <div class="card-header text-contrast text-center strong darken-on-hover"><?=number_format($result_tieubieu[$j]["gia"],0,",",".")?> $ </div>
                     </a> </li>
             <?php }else if($result_tieubieu[$j]['size']==4){?>
-                <li class="col-xs-12  col-md-12 col-lg-12 row-space-4 transition-delay-700">
+                <li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row-space-4 transition-delay-700">
                     <a href="tour/<?=$result_tieubieu[$j]['id']?>-<?=$result_tieubieu[$j]['tenkhongdau']?>.html" class="darken-on-hover-container panel-image media-photo link-reset community-photo-card hosting-card text-center aTourLink">
                         <div class="media-cover background-hosting-card-lazy darken-on-hover background-hosting-card"  style="background:url(<?=_upload_product_l.$result_tieubieu[$j]['photo']?>) no-repeat"></div>
                         <div class="row row-table row-full-height">
                             <div class="col-sm-12 col-center col-bottom">
                                 <div class="divTourDes">
                                     <div class="h2 text-center text-contrast strong"> <?=catchuoi($result_tieubieu[$j]["ten_$lang"],420)?> </div>
-                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),100) ?> <br>
+                                    <p class="text-center text-contrast"><?= catchuoi(str_replace("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;","",strip_tags($result_tieubieu[$j]["mota_$lang"],"")),87) ?> <br>
                                 </div>
                             </div>
                         </div>

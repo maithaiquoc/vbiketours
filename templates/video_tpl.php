@@ -32,7 +32,7 @@
         font-family:Arial, sans-serif;
     }
 </style>
-<div id="ja-container" class="wrap ">
+<div id="ja-container" class="wrap container-fluid">
     <div class="main clearfix">
         <div id="ja-mainbody" style="width:100%">
             <ul class="breadcrumb">

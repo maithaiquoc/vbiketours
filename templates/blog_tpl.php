@@ -223,7 +223,7 @@ padding-bottom: 20px;
 border-bottom: 1px dashed #ccc;
 }
 </style>
-<div id="ja-container" class="wrap ja-r1">
+<div id="ja-container" class="wrap ja-r1 container-fluid">
   <div class="main clearfix">
     <div id="ja-mainbody" style="width:90%">
         <ul class="breadcrumb">

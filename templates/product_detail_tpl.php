@@ -34,9 +34,9 @@ $d->reset();
     document.oncontextmenu = nocontext;
 //]]>
 </script>
-<div id="ja-container" class="wrap ja-r1">
-  <div class="main clearfix">
-    <div id="ja-mainbody" style="width:75%"> 
+<div id="ja-container" class="wrap ja-r1 container-fluid">
+  <div class="main clearfix row">
+    <div id="ja-mainbody" style="width:75%">
       <!-- CONTENT -->
       <div id="ja-main" style="width:100%">
         <div class="inner clearfix">
