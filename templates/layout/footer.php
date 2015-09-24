@@ -1,111 +1,76 @@
 <div class="footer-content-container page-container-responsive">
     <div class="row row-condensed">
-      <div class="col-md-6">
+      <div class="col-xs-12 col-md-6">
         <div class="language-curr-picker clearfix">
-	   <div class="col-md-4">
+            <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-sm-4">
+                    <?php
+                        $d->reset();
+                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt < 7 order by id desc";
+                        $d->query($sql_quangcao);
+                        $result_quangcao=$d->result_array(); ?>
 
-        <div class="col-xs-12 col-sm-4">
-       
-<?php
+                        <ul class="foter_ul">
+                            <?php if(!empty($result_quangcao)){
+                                for($j=0,$count_cc=count($result_quangcao);$j<$count_cc;$j++){ ?>
+                                    <li>
+                                        <a href="<?=$result_quangcao[$j]['link']?>">
+                                            <img src="<?=_upload_duan_l.$result_quangcao[$j]['photo']?>" height="27" width="92">
+                                        </a>
+                                    </li>
+                                <?php }}?>
+                        </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <?php
+                        $d->reset();
+                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt >=7 and stt<=12 order by id desc";
+                        $d->query($sql_quangcao);
+                        $result_quangcao1=$d->result_array(); ?>
 
-$d->reset();
+                        <ul class="foter_ul">
+                            <?php if(!empty($result_quangcao1)){
+                                for($j=0,$count_cc=count($result_quangcao1);$j<$count_cc;$j++){ ?>
+                                    <li>
+                                        <a href="<?=$result_quangcao1[$j]['link']?>">
+                                            <img src="<?=_upload_duan_l.$result_quangcao1[$j]['photo']?>" height="27" width="92">
+                                        </a>
+                                    </li>
+                                <?php }}?>
+                        </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <?php
+                        $d->reset();
+                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt>12 and stt<19 order by id desc";
+                        $d->query($sql_quangcao);
+                        $result_quangcao2=$d->result_array(); ?>
 
-$sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt < 7 order by id desc";
-
-$d->query($sql_quangcao);	
-
-$result_quangcao=$d->result_array();
-?>
-       <ul class="foter_ul">
-       <?php if(!empty($result_quangcao))
-
-{
-
-for($j=0,$count_cc=count($result_quangcao);$j<$count_cc;$j++)
-
-{		
-
-?>
-	   <li>
-	 <a href="<?=$result_quangcao[$j]['link']?>">  <img src="<?=_upload_duan_l.$result_quangcao[$j]['photo']?>" height="27" width="92"></a>
-	   	   </li>
-          
-	   <?php }}?>
-	   </ul>
+                        <ul class="foter_ul">
+                            <?php if(!empty($result_quangcao2)){
+                                for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++){ ?>
+                                    <li>
+                                        <a href="<?=$result_quangcao2[$j]['link']?>">
+                                            <img src="<?=_upload_duan_l.$result_quangcao2[$j]['photo']?>" height="27" width="92">
+                                        </a>
+                                    </li>
+                                <?php }}?>
+                        </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <iframe class="center-block" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FVbiketours%2F1468819633364888%3Fref%3Dhl&amp;width=270&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=359340147575210" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:258px;" allowTransparency="true"></iframe>
+                </div>
+            </div>
+          </div>
       </div>
-      <div class="col-sm-4">
-      <?php
-
-$d->reset();
-
-$sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt >=7 and stt<=12 order by id desc";
-
-$d->query($sql_quangcao);	
-
-$result_quangcao1=$d->result_array();
-?>
-       
-         <ul class="foter_ul">
-       <?php if(!empty($result_quangcao1))
-
-{
-
-for($j=0,$count_cc=count($result_quangcao1);$j<$count_cc;$j++)
-
-{		
-
-?>
-	   <li>
-	 <a href="<?=$result_quangcao1[$j]['link']?>">  <img src="<?=_upload_duan_l.$result_quangcao1[$j]['photo']?>" height="27" width="92"></a>
-	   	   </li>
-          
-	   <?php }}?>
-	   </ul>
-      </div>
-      <div class="col-sm-4">
-      <?php
-
-$d->reset();
-
-$sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt>12 and stt<19 order by id desc";
-
-$d->query($sql_quangcao);	
-
-$result_quangcao2=$d->result_array();
-?>
-       
-         <ul class="foter_ul">
-       <?php if(!empty($result_quangcao2))
-
-{
-
-for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
-
-{		
-
-?>
-	   <li>
-	 <a href="<?=$result_quangcao2[$j]['link']?>">  <img src="<?=_upload_duan_l.$result_quangcao2[$j]['photo']?>" height="27" width="92"></a>
-	   	   </li>
-          
-	   <?php }}?>
-	   </ul>
-      </div>
-      
-	   </div>
-	  
-	  <div class="col-md-3">
-		<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FVbiketours%2F1468819633364888%3Fref%3Dhl&amp;width=270&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=359340147575210" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:258px;" allowTransparency="true"></iframe>
-		</div>
-       
-      </div>
-      </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-md-2">
         <h5><b>Company</b></h5>
         <ul class="unstyled list-layout">
+          <li><a href="index.html" class="link-contrast">Home</a></li>
           <li><a href="about-us.html" class="link-contrast">About Us</a></li>
           <li><a href="testimonials.html" class="link-contrast">Testimonials</a></li>
-          <li><a href="press.html" class="link-contrast">Press</a></li>
           <li><a href="news.html" class="link-contrast">News</a></li>
           <li><a href="link.html" class="link-contrast">Link</a></li>
           <li><a href="faq.html" class="link-contrast">Faq</a></li>
@@ -113,7 +78,7 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
           <li><a href="contact.html" class="link-contrast">Contact</a></li>
         </ul>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-md-2">
         <h5><b>Our Tour</b></h5>
         <ul class="unstyled list-layout">
         <?php 
@@ -133,7 +98,7 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
         <?php }}?>
         </ul>
       </div>
-      <div class="col-md-2">
+      <div class="col-xs-12 col-md-2">
         <h5><b>News</b></h5>
         <ul class="unstyled list-layout">
          <?php
@@ -177,11 +142,10 @@ for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++)
       
       </div>
     </div>
-    <div class="col-sm-12 row-space-4 row-space-top-4">
+    <div class="col-xs-12 col-sm-12 row-space-4 row-space-top-4">
       <ul class="unstyled list-layout list-inline text-center h5">
         <li><a href="about-us.html" class="link-contrast">About Us</a></li>
           <li><a href="testimonials.html" class="link-contrast">Testimonials</a></li>
-          <li><a href="press.html" class="link-contrast">Press</a></li>
           <li><a href="news.html" class="link-contrast">News</a></li>
           <li><a href="link.html" class="link-contrast">Link</a></li>
           <li><a href="faq.html" class="link-contrast">Faq</a></li>

@@ -100,7 +100,7 @@
 
 
 
-			if( keyword.value == '' || keyword.value ==='Tìm ki?m'){alert('B?n ch?a nh?p t? khóa tìm ki?m!'); keyword.focus(); return false;}
+			if( keyword.value == '' || keyword.value ==='Tìm ki?m'){alert("You did not type any thing!"); keyword.focus(); return false;}
 
 
 

@@ -11,7 +11,7 @@
           <h1 id="tagline" class="uppercase text-jumbo text-contrast1 row-space-1">Discover vietnam on motorbikes</h1>
           <div id="subtitle" class="h4 text-contrast2 row-space-4"><?=$row_setting['diachi_en']?> </div>
           <div class="col-8 hide show-sm">
-            <div class="input-addon" id="sm-search-field"> <span class="input-stem input-large fake-search-field"> Where do you want to go? </span> <i class="input-suffix btn btn-primary icon icon-full icon-search"></i> </div>
+            <div class="input-addon" id="sm-search-field"> <input id="iText" class="input-stem input-large fake-search-field" placeholder="Where do you want to go?" onblur="if(this.value == ''){this.value = 'Search';}"><i id="iSearch" class="input-suffix btn btn-primary icon icon-full icon-search"></i> </div>
           </div>
           <div class="banner ii_w ac">
             <div class="ib ii_dropdown_wr banner_des_select hide_64">
