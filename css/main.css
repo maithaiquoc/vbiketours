@@ -123,8 +123,12 @@ content: '\f1d8';
 }
 
 .spanPhotoCollection a img{
-    max-width: 100%;
-    height: 354px;
+    height: auto;
+}
+
+.container_skitter{
+    width: 100% !important;
+    height: auto !important;
 }
 
 #menu1 li{
