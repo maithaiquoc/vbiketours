@@ -421,30 +421,25 @@ $('#CategoryImage').attr("src", path);
 <meta content="{&quot;inspectlet_on_guest&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:1,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:null},{&quot;name&quot;:&quot;inspectlet_active&quot;,&quot;buckets&quot;:null}]},&quot;p1_saved_search_widget&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:null},{&quot;name&quot;:&quot;use_saved_search_widget&quot;,&quot;buckets&quot;:null}]}}" id="_bootstrap-erf">
 <?php include _template."layout/mob.php"; ?>
 <div id="header" class="airbnb-header shift-with-hiw">
-    <div class="header--sm show-sm"> <a href="#" class="link-reset burger--sm">
-            <i class="icon icon-reorder icon-rausch"></i> </a>
-        <div class="title--sm text-center"> <a href="#" class="header-belo"></a> </div>
-        <div class="action--sm"></div>
-        <nav class="nav--sm">
-            <div class="nav-mask--sm"></div>
-            <div class="nav-content--sm panel">
+    <div class="header--sm show-sm">
+        <ul id="menu1">
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="testimonials.html"> Testimonials </a> </li>
+            <!--      <li id="sign_up" class="pull-left medium-right-margin"> <a data-signup-modal="" data-header-view="true" href="press.html" class="link-reset" rel="nofollow" onmouseover="this.style.backgroundColor = '#e2227c';" onmouseout="this.style.backgroundColor = 'inherit';"> Press </a> </li>-->
+            <li> <a href="link.html"> Link </a> </li>
+            <li> <a href="about-us.html"> About Us </a> </li>
+            <li> <a href="faq.html"> Faq </a> </li>
 
-                <div class="nav-menu-wrapper">
-                    <div class="va-container">
-                        <div class="va-middle nav-menu panel-body">
+            <li> <a href="gallery.html" >Gallery</a> </li>
+            <li> <a href="news.html">News</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+        </ul>
 
-                            <?php include _template."layout/mob_menu.php"; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
         <div class="modal" role="dialog" aria-hidden="true" id="search-modal--sm">
             <div class="modal-table">
                 <div class="modal-cell">
                     <div class="modal-content">
                         <?php include _template."layout/mob_menu_btn.php"; ?>
-
                     </div>
                 </div>
             </div>
@@ -509,27 +504,32 @@ $('#CategoryImage').attr("src", path);
         </div>
     </div>
 </div>
-<div class="p1-hero-wrapper shift-with-hiw" onclick="window.open($('#hiddenUrlSlide').val())">
+<div class="p1-hero-wrapper shift-with-hiw" id="p1Slider" onclick="if($('#hiddenActiveSlide').val() == 0){window.open($('#hiddenUrlSlide').val());}">
     <div id="hero" data-native-currency="USD">
         <!--<ul class="list-unstyled" id="slideshow">
           <li class="active"> <img alt="" src="./images/slider.png" width="100%"> </li>
         </ul>-->
+        <input type="hidden" id="hiddenActiveSlide" value="0"/>
         <input type="hidden" id="hiddenUrlSlide"/>
         <?php include _template."layout/slideranh.php"; ?>
         <!-- Jssor Slider End -->
-
     </div>
+
+    <div class="row show-sm"><a class="btn btn-special btn-right" href="contact.html"><?=$row_setting['hotline']?></a></div>
 
     <div class="search-area text-center page-container-responsive">
         <div class="va-container">
             <div class="intro-area va-middle">
                 <?php include _template."layout/menu_top.php"; ?>
                 <?php include _template."layout/menu_button.php"; ?>
-
             </div>
         </div>
     </div>
 </div>
+
+<div class="arrow_left" id="divPrevSlider"></div>
+<div class="arrow_right" id="divNextSlider"></div>
+
 <div class="panel panel-dark">
     <div id="discovery-container">
 
@@ -562,9 +562,7 @@ $('#CategoryImage').attr("src", path);
     </div>
 </div>
 <div class="row-space-4" id="community-wrapper">
-
     <?php include _template.$template."_tpl.php"; ?>
-
 </div>
 <?php  if(($_GET['com']=='index') ||($_GET['com']=='')){?>
     <?php include _template."layout/video.php"; ?>
@@ -646,53 +644,11 @@ $('#CategoryImage').attr("src", path);
 </div>
 <div class="pac-container" style="display: none; width: 218px; position: absolute; left: 144px; top: 570px;"></div>
 <span style="position: absolute; left: -999px; top: -999px; visibility: hidden; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbewy</span>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/SlickNav/slicknav.css" media="screen and (max-width: 991px)"/>
+<script type="text/javascript" src="css/SlickNav/jquery.slicknav.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-
-        var options = {
-            $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-            $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $ChanceToShow: 2,
-                $AutoCenter: 2
-            }
-        };
-
-        //Make the element 'slider1_container' visible before initialize jssor slider.
-        $("#slider1_container").css("display", "block");
-        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-        //responsive code begin
-        //you can remove responsive code if you don't want the slider scales while window resizes
-        function ScaleSlider() {
-            var bodyWidth = document.body.clientWidth;
-            if (bodyWidth)
-                jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
-            else
-                window.setTimeout(ScaleSlider, 30);
-        }
-        ScaleSlider();
-
-        $(window).bind("load", ScaleSlider);
-        $(window).bind("resize", ScaleSlider);
-        $(window).bind("orientationchange", ScaleSlider);
-        //responsive code end
-
-        function SlideParkEventHandler(slideIndex, fromIndex) {
-            var url = $("#image_" + slideIndex).attr('value');
-            $("#hiddenUrlSlide").val(url);
-            //do something here
-        }
-
-        jssor_slider1.$On($JssorSlider$.$EVT_PARK, SlideParkEventHandler);
-    });
-</script>
-
+<script src="js/resolve.js"></script>
 </body>
-
 </html>	
