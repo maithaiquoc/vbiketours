@@ -54,9 +54,9 @@
 
 
 
-<b>No.</b> <input type="text" name="stt<?=$i?>" value="1" style="width:30px" />	<br />
+<b>Link.</b> <input type="text" name="link<?=$i?>" style="width:250px" />	<br /><br/>
 
-
+    <b>No.</b> <input type="text" name="stt<?=$i?>" value="1" style="width:30px" />	<br />
 
 	<b>Show</b> <input type="checkbox" name="hienthi<?=$i?>" checked="checked" /> <br /><br />
 
