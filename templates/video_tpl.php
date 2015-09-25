@@ -47,14 +47,22 @@
                             <div class="ja-box-ct clearfix">
                                 <h1 class="componentheading">Video Clips</h1>
                                 <div class="pvideo">
-                                    <?php if(count($tintuc)>0){ ?>
                                     <?php
-                                        for($i=0,$count_tintuc=count($tintuc);$i<$count_tintuc;$i++){
+                                    $d->reset();
+
+                                    $sql_newvideo="select ten_$lang,link,id,photo,thumb,tenkhongdau from #_video where hienthi =1  order by ngaytao desc";
+
+                                    $d->query($sql_newvideo);
+
+                                    $result_video=$d->result_array();
+
+                                    if(count($result_video)>0){
+                                        for($i=0,$count_video=count($result_video);$i<$count_video;$i++){
                                             ?>
                                             <div class="pv-item">
                                                 <div class="pvi-video">
-                                                    <a href="<?=$tintuc[$i]['link']?>" class="html5lightbox" title=" <?=$tintuc[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480"><img src="<?=_upload_hinhanh_l.$tintuc[$i]['photo']?>" alt=" <?=$tintuc[$i]['ten_'.$lang]?>" height="200" width="300"></a> </div>
-                                                <div class="pvi-title"> <?=$tintuc[$i]['ten_'.$lang]?></div>
+                                                    <a href="<?=$result_video[$i]['link']?>" class="html5lightbox" title=" <?=$result_video[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480"><img src="<?=_upload_hinhanh_l.$result_video[$i]['photo']?>" alt=" <?=$result_video[$i]['ten_'.$lang]?>" height="200" width="300"></a> </div>
+                                                <div class="pvi-title"> <?=$result_video[$i]['ten_'.$lang]?></div>
                                             </div>
                                         <?php } ?>
                                     <?php }else{echo "<p class='text-center'>There's no video now...</p>";} ?>
