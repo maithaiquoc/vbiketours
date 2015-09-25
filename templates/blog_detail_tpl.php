@@ -213,11 +213,10 @@ background: #ffffff;
 <div id="ja-container" class="wrap ja-r1">
   <div class="main clearfix">
     <div id="ja-mainbody" style="width:90%">
-      <table>
-        <tr id="bodyrow"> 
+        <div id="bodyrow">
           
           <!-- Main Column -->
-          <td id="middle">
+          <div id="middle" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
           <div class="post-1395 post type-post status-publish format-standard hentry category-travel-tips category-xo-tours tag-copycat tag-fake tag-hanoi tag-motorbike-tours tag-scam tag-unsafe tag-xo-tours odd" id="post-1395">
               <div class="post-headline">
                 <h2> <a href="news/<?=$tintuc_detail['id']?>-<?=$tintuc_detail['tenkhongdau']?>.html" rel="bookmark" title="<?=$tintuc_detail["ten_$lang"]?>">
@@ -238,7 +237,7 @@ background: #ffffff;
 
 <div style="width:100%;margin-top:20px;">
 
-<img src="images/tags.jpg" style="float: left;"></img>
+<img src="images/tags.jpg" style="float: left;">
 
 <h3 class="title-pro-new"style="font-weight: bold;">Tags</h3></div>
 
@@ -417,8 +416,8 @@ text-transform: capitalize;">
                 </li>
               </div>
            
-             </td>
-          <td id="right">
+             </div>
+          <div id="right" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
           <div id="share-buttons"> <a href="<?= $row_setting['googleplus_link'] ?>" target="_blank"> <img src="images/Google+.png" alt="Google" /> </a> <a href="<?= $row_setting['linkedin_link'] ?>" target="_blank"> <img src="images/linkedin_32.png" alt="linkedin" /> </a> <a href="<?= $row_setting['facebook_link'] ?>" target="_blank"> <img src="images/Facebook.png" alt="Facebook" /> </a> <a href="<?= $row_setting['twitter_link'] ?>" target="_blank"> <img src="images/twitter.png" alt="Twitter" /> </a> </div>
             <div id="search-6" class="widget widget_search">
                <?php include _template."layout/search.php"; ?>
@@ -496,11 +495,10 @@ text-transform: capitalize;">
                   ?>
               </ul>
           </div>
-          </td>
+          </div>
           <!-- / Right Sidebar --> 
           
-        </tr>
-      </table>
+        </div>
     </div>
   </div>
 </div>
