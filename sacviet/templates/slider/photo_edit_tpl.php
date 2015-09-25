@@ -132,9 +132,9 @@ if (strpos($item['photo'],'swf') == true){
 
 
 
-	<b>No. </b> <input type="text" name="stt" value="<?=$item['stt']?>" style="width:30px" />	<br />
+	<b>Link </b> <input type="text" name="link" value="<?=$item['link']?>" style="width: 250px;" />	<br /> <br/>
 
-
+    <b>No. </b> <input type="text" name="stt" value="<?=$item['stt']?>" style="width:30px" />	<br />
 
 	<b>Show</b> <input type="checkbox" name="hienthi" <?=$item['hienthi'] ? 'checked="checked"' : ""?> /> <br /><br />
 
