@@ -992,7 +992,7 @@ a.readon:active{text-decoration:none;}
 div.tour_image_price{width:300px;float:left;border:solid 1px #B2C2A2;padding:14px;margin:0 15px 13px 0;background:#EDF1DD;}
 img.tour_image_thumb{width:274px !important;height:auto}
 div.tour_description{clear:both;padding:0;margin:0;}
-.book_now{width:300px;clear:both;text-align:center !important;}
+.book_now{clear:both;text-align:center !important;}
 .book_now_btn, .contact_us_btn{color:white;margin:0 auto !important;display:block;padding:10px 20px;outline:none;text-decoration:none;width:164px;height:auto;text-transform:uppercase;background:#F37600;background:-moz-linear-gradient(top,
 #f69800 0%,
 #F37600);background:-webkit-gradient(linear, left top, left bottom,

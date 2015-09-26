@@ -136,6 +136,16 @@ function IsEmail(email) {
 </div>
 </form><?php */?>
 
+<?php
+$d->reset();
+
+$sql_contact = "select * from #_setting ";
+
+$d->query($sql_contact);
+
+$row_setting = $d->fetch_array();
+?>
+
 <div id="ja-container" class="wrap ">
 	<div class="main clearfix">
 
@@ -157,38 +167,14 @@ function IsEmail(email) {
 			<div id="ja-current-content" class="column" style="width:100%">
 								
 								<div class="ja-content-main clearfix">
-								<div class="componentheading">You have questions? We've got answers!</div>
+								<div class="componentheading"><?=$row_setting['kygoi_en']?></div>
 	 <form name="form2" id="form2" method="post"><!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
 <div class="contact-container" id="rsform_12_page_0">
 	<div><div id="rsform_error_12" style="display: none;"><p class="formRed">Please complete all required fields!</p></div></div>
 	<div class="contact-main">
 		<div class="contact-inner contact-left">
-			<div class="formField rsform-block rsform-block-description"><p>Thank you for your interest in VBIKETOURS! You can contact us quickly by filling out the contact form on the right or by clicking on the social media buttons below.</p>
-<p>Please read our <a href="http://vbiketours.com/faq.html">FAQ</a> before submitting your questions, as answers to most common questions can be found there.</p>
-<p class="red">If you do not hear back from us within 24 hours, please check your SPAM folder!</p>
-<p>
-Email:<br>
-&nbsp;&nbsp;&nbsp;vbiketours@gmail.com
-</p>
-<p>
-Phone:<br>
-&nbsp;&nbsp;&nbsp;Hotline&nbsp;&nbsp;&nbsp;090 3 378 266<br>
-&nbsp;&nbsp;&nbsp;Landline&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08 66 85 23 66
-</p>
-<p>
-Hours of operation:<br>
-&nbsp;&nbsp;&nbsp;8am - 10pm daily
-</p></div>
+			<div class="formField rsform-block rsform-block-description"><?=$row_setting['kygoi_vi']?></div>
 			<div class="formField rsform-block rsform-block-socialicons">
-            <?php
-$d->reset();
-
-			$sql_contact = "select * from #_setting ";
-
-			$d->query($sql_contact);
-
-			$row_setting = $d->fetch_array();
-			?>
             <p class="social-icons-zone">
             <a href="<?=$row_setting['facebook_link'] ?>" target="_blank"><img width="128" height="48" src="./upload/contact_facebook48.png" alt="vbiketours on Facebook"></a>&nbsp;&nbsp;<a href="<?= $row_setting['googleplus_link'] ?>" target="_blank"><img width="48" height="48" src="./upload/contact_gplus48.png" alt="vbiketours on Google plus"></a>&nbsp;&nbsp;<a href="<?= $row_setting['twitter_link'] ?>" target="_blank"><img width="48" height="48" src="./upload/contact_twitter48.png" alt="vbiketours on Twitter"></a>
             <a href="<?= $row_setting['linkedin_link'] ?>" target="_blank">

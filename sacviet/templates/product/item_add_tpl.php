@@ -6,7 +6,7 @@
 
 		mode : "exact",
 
-        elements : "noidung_vi, noidung_en",
+        elements : "noidung_vi, noidung_en, mota_vi, thanhphan_vi, dksudung_vi",
 
 		theme : "advanced",
 
@@ -324,17 +324,30 @@ function get_main_cat()
        <b  style="width:400px">Type =3, width: 990px ;height:492px</b> <br/> <br/> 
          <b  style="width:400px">Type =4, width: 1400px ; height:492px</b> <br/> <br/> 
   
-    <table>		<tr>			<td><b>Content</b></td>			
-    <td><b>Part displayed in blue background</b></td>			
-    <td><b>Part displayed in red background</b></td>		</tr>		
-    <tr>			<td><div> <textarea name="mota_vi" cols="50" rows="8"><?=@$item['mota_vi']?></textarea></div></td>		
-    	<td><div> <textarea name="thanhphan_vi" cols="50" rows="8"><?=@$item['thanhphan_vi']?></textarea></div></td>
-        		<td><div> <textarea name="dksudung_vi" cols="50" rows="8"><?=@$item['dksudung_vi']?></textarea></div></td>		</tr>	
+    <table>
+        <tr>
+            <div>
+                <p><b>Content</b></p><br/>
+                <textarea name="mota_vi" id="mota_vi"><?=@$item['mota_vi']?></textarea>
+            </div>
+        </tr>
+        <tr>
+            <div>
+                <p><b>Part displayed in blue background</b></p><br/>
+                <textarea name="thanhphan_vi" id="thanhphan_vi"><?=@$item['thanhphan_vi']?></textarea>
+            </div>
+        </tr>
+        <tr>
+            <div>
+                <p><b>Part displayed in red background</b></p><br/>
+                <textarea name="dksudung_vi" id="dksudung_vi"><?=@$item['dksudung_vi']?></textarea>
+            </div>
+        </tr>
                 	<?php /*?><tr>			<td><b>Mô tả (english)</b></td>			<td><b>Thành phần (english)</b></td>			<td><b>Điều kiện sử dụng (english)</b></td>		</tr>		<tr>			<td><div> <textarea name="mota_en" cols="50" rows="8"><?=@$item['mota_en']?></textarea></div></td>			<td><div> <textarea name="thanhphan_en" cols="50" rows="8"><?=@$item['thanhphan_en']?></textarea></div></td>			<td><div> <textarea name="dksudung_en" cols="50" rows="8"><?=@$item['dksudung_en']?></textarea></div></td>		</tr><?php */?>	</table>	
 
             
 
-    <b>Part displayed in white background</b><br/>
+    <p><b>Part displayed in white background</b></p><br/>
 
 	<div>
 

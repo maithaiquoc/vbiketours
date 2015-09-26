@@ -390,6 +390,16 @@ content: '\f1d8';
     .slicknav_menu, #menu1 li{
         display: none;
     }
+
+    .spanPhotoCollection a img, .pvi-video a img{
+        width: 430px;
+        height: 365px;
+    }
+
+    .pvi-video a img{
+        width: 300px;
+        height: 200px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1099px){

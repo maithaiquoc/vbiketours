@@ -8,7 +8,7 @@
 			$row_setting = $d->fetch_array();
 			?>
 <div class="col-sm-12 col-center">
-          <h1 id="tagline" class="uppercase text-jumbo text-contrast1 row-space-1">Discover vietnam on motorbikes</h1>
+          <h1 id="tagline" class="uppercase text-jumbo text-contrast1 row-space-1"><?=$row_setting['keywords']?></h1>
           <div id="subtitle" class="h4 text-contrast2 row-space-4"><?=$row_setting['diachi_en']?> </div>
           <div class="col-8 hide show-sm">
             <div class="input-addon" id="sm-search-field"> <input id="iText" class="input-stem input-large fake-search-field" placeholder="Where do you want to go?" onblur="if(this.value == ''){this.value = 'Search';}"><i id="iSearch" class="input-suffix btn btn-primary icon icon-full icon-search"></i> </div>
