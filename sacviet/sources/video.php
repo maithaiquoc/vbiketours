@@ -217,7 +217,7 @@ function save_item(){
 
 			$data['photo'] = $photo;
 
-			$data['thumb'] = create_thumb($data['photo'], 180, 170, _upload_hinhanh,$file_name);			
+			$data['thumb'] = create_thumb($data['photo'], 430, 365, _upload_hinhanh,$file_name);
 
 			$d->setTable('video');
 

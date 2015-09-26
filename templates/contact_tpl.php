@@ -211,7 +211,7 @@ $row_setting = $d->fetch_array();
 			<textarea cols="32" rows="5" name="noidung" id="txtNoidung" style="width: 90%" class="rsform-text-box"></textarea><br/>
 			</div>
 			<div class="formField rsform-block rsform-block-message text-center">
-                <button id="btnSend" style="background: #e2227c; color: #ffeb00; height: 30px; width: 100px; cursor: pointer;" name="btnSend" type="button"> Send </button>
+                <button id="btnSend" class="btn" style="background: #e2227c; color: #ffffff !important; height: 30px; width: 100px; cursor: pointer;" name="btnSend" type="button"> Send </button>
 			</div>
 			<!--<div class="formField rsform-block"><input type="submit" value="SEND" name="form[Send]" id="Send" class="submit-booking-form-button stdButton regular gayblue rsform-submit-button" style="font-weight: bold;"></div>
 			<div class="formField rsform-block rsform-block-send"></div>-->

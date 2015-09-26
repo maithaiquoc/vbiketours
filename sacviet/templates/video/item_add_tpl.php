@@ -86,7 +86,7 @@ document.getElementById("pnbylink").style.display = "block";
 
 	<?php }?>
 
-	<b>Photo:</b> <input type="file" name="file" /> Width:1349px&nbsp;Height:600px&nbsp;(index), W: 300px;H:200px(Video clip)<?=_product_type?><br />  
+	<b>Photo:</b> <input type="file" name="file" /> Width:1349px&nbsp;Height:600px&nbsp;(index), W: 430px;H:365px(Video clip)<?=_product_type?><br />
 
     <b>Title</b> <input type="text" name="ten_vi" id="ten_vi" value="<?=@$item['ten_vi']?>" class="input" /><br />  
    

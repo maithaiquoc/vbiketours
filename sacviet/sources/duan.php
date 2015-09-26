@@ -482,7 +482,7 @@ function save_item(){
 
 			$data['photo'] = $photo;	
 
-			$data['thumb'] = create_thumb($data['photo'], 200, 170, _upload_duan,$file_name,1);		
+			$data['thumb'] = create_thumb($data['photo'], 430, 365, _upload_duan,$file_name,1);
 
 			$d->setTable('duan');
 

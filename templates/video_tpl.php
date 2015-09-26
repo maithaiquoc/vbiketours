@@ -61,8 +61,9 @@
                                             ?>
                                             <div class="pv-item">
                                                 <div class="pvi-video">
-                                                    <a href="<?=$result_video[$i]['link']?>" class="html5lightbox" title=" <?=$result_video[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480"><img src="<?=_upload_hinhanh_l.$result_video[$i]['photo']?>" alt=" <?=$result_video[$i]['ten_'.$lang]?>" height="200" width="300"></a> </div>
+                                                    <a href="<?=$result_video[$i]['link']?>" class="html5lightbox" title=" <?=$result_video[$i]['ten_'.$lang]?>" data-group="xovid" data-width="854" data-height="480"><img src="<?=_upload_hinhanh_l.$result_video[$i]['thumb']?>" alt=" <?=$result_video[$i]['ten_'.$lang]?>" height="200" width="300"></a> </div>
                                                 <div class="pvi-title"> <?=$result_video[$i]['ten_'.$lang]?></div>
+                                                <div class="div-video-play div-video-play-gallery" onclick="$(this).parent().find('a').click();"></div>
                                             </div>
                                         <?php } ?>
                                     <?php }else{echo "<p class='text-center'>There's no video now...</p>";} ?>
@@ -91,10 +92,11 @@
                                             <?php
                                             if(!empty($result_tintuc)){
                                                 foreach($result_tintuc as $item_ha){ ?>
-                                                    <div class="ag_thumbclassic col-lg-5 spanPhotoCollection">
+                                                    <div class="ag_thumbclassic spanPhotoCollection">
                                                         <a href="<?=_upload_duan_l,$item_ha['photo']?>" title="Click to view" class="" rel="lightbox[AdmirorGallery090]" target="_blank">
-                                                            <img src="<?=_upload_duan_l,$item_ha['photo']?>" alt="<?=_upload_duan_l,$item_ha['ten']?>" class="img-responsive">
+                                                            <img src="<?=_upload_duan_l,$item_ha['thumb']?>" alt="<?=_upload_duan_l,$item_ha['ten']?>" class="img-responsive">
                                                         </a>
+                                                        <br/>
                                                         <p class="pPhotoCollection"><a href="/photos/<?=$item_ha['id']?>-<?=$item_ha['tenkhongdau']?>.html"><?=$item_ha['ten_'.$lang]?></a></p>
                                                     </div>
                                                 <?php }}else{echo "<p class='text-center'>There are no images here...</p>";}?>
