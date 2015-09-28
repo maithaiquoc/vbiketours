@@ -363,6 +363,7 @@ $('#CategoryImage').attr("src", path);
 <link rel="stylesheet" href="css/allinone.css" type="text/css">
 <link rel="stylesheet" href="css/css.css" type="text/css">
 <link rel="stylesheet" href="./css/white.css" type="text/css">
+<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
 <link rel="image_src" href="http://vbiketours.com/<?=_upload_product_l,$row_detail['photo']?>" />
 <meta name="description" content="Motorbike tours in Viet Nam">
 <meta property="fb:app_id" content="138566025676">
