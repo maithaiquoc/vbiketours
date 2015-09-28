@@ -21,7 +21,7 @@
 
 	?>
                 <div onclick="window.open('<?=$result_slider[$i]['link']?>')">
-                    <img id="image_<?=$i?>" value="<?=$result_slider[$i]['link']?>" u="image" src2="<?=_upload_hinhanh_l.$result_slider[$i]['photo']?>" width="1200" height="600" />
+                    <img id="image_<?=$i?>" value="<?=$result_slider[$i]['link']?>" u="image" src2="<?=_upload_hinhanh_l.$result_slider[$i]['photo']?>" width="1140" height="600" />
                 </div>
 
                   <?php } ?>
