@@ -51,7 +51,7 @@ $d->reset();
                       <img class="tour_image_thumb" src="<?=_upload_product_l,$row_detail['photo']?>" alt="<?=$row_detail["ten_$lang"]?> " width="360" height="270">
                         <div class="tour_price">
                           <ul>
-                            <li>Price: $<?=number_format($row_detail['gia'],0,",",".")?> USD  &nbsp;</li>
+                            <li>Price: <span>$<?=number_format($row_detail['gia'],0,",",".")?> USD  &nbsp;</span></li>
                             <li>Length of tour: <?=$row_detail["lenght"]?>  hours</li>
                             <li>Tour starts at <?=$row_detail["start"]?></li>
                             <!-- <li>Accident insurance included!</li>
