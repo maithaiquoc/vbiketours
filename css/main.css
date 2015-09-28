@@ -254,6 +254,11 @@ content: '\f1d8';
     margin: 0 !important;
 }
 
+div.ja-slidenews-item a.img-wrap{
+    box-shadow: none !important;
+    border: none !important;
+}
+
 @media (max-width: 767px) {
     .media-cover{
         background-size: contain !important;
