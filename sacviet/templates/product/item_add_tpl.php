@@ -91,63 +91,6 @@ height:"500px",
 		}
 
 	});
-
-	tinyMCE.init({
-
-		// General options
-
-		mode : "exact",
-
-        elements : "mota_vi,mota_en,thanhphan_vi,thanhphan_en, dksudung_vi, dksudung_en",
-
-		theme : "advanced",
-
-		convert_urls : false,		
-
-height:"250px",
-
-    width:"100%",
-
-	remove_script_host : false,	
-
-// Theme options
-
-		theme_advanced_buttons1 : "bold,italic,underline,strikethrough",
-
-		// Style formats
-
-		style_formats : [
-
-			{title : 'Bold text', inline : 'b'},
-
-			{title : 'Red text', inline : 'span', styles : {color : '#ff0000'}},
-
-			{title : 'Red header', block : 'h1', styles : {color : '#ff0000'}},
-
-			{title : 'Example 1', inline : 'span', classes : 'example1'},
-
-			{title : 'Example 2', inline : 'span', classes : 'example2'},
-
-			{title : 'Table styles'},
-
-			{title : 'Table row 1', selector : 'tr', classes : 'tablerow1'}
-
-		],
-
-paste_text_linebreaktype : "br",
-
-		// Replace values for the template plugin
-
-		template_replace_values : {
-
-			username : "Some User",
-
-			staffid : "991234"
-
-		}
-
-	});
-
 </script>
 
 <script language="javascript">
