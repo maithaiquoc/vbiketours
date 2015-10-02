@@ -1112,7 +1112,7 @@ function save_item(){
 
 			$data['photo'] = $photo;
 
-			$data['thumb'] = create_thumb($data['photo'], 120,80, _upload_blog,$file_name);
+			$data['thumb'] = create_thumb($data['photo'], 150,85, _upload_blog,$file_name);
 
 			$d->setTable('blog');
 
