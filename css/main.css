@@ -259,6 +259,23 @@ div.ja-slidenews-item a.img-wrap{
     border: none !important;
 }
 
+.newblog img{
+    width: 150px !important;
+    height: 85px;
+    padding-right: 0 !important;
+    margin-right: 25px;
+}
+
+.foter_ul li{
+    padding: 0 12.5px;
+}
+
+.foter_ul li img{
+    width: 270px;
+    height: 214px;
+    padding-right: 0;
+}
+
 @media (max-width: 767px) {
     .media-cover{
         background-size: contain !important;
@@ -401,6 +418,11 @@ div.ja-slidenews-item a.img-wrap{
     }
 
     #AG_td{
+        text-align: center;
+    }
+
+    .foter_ul li{
+        padding: 7px 5px;
         text-align: center;
     }
 }
