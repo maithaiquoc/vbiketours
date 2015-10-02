@@ -3,59 +3,23 @@
       <div class="col-xs-12 col-md-6">
         <div class="language-curr-picker clearfix">
             <div class="col-xs-12 col-md-6">
-                <div class="col-xs-12 col-sm-4">
+                <div class="row">
                     <?php
-                        $d->reset();
-                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt < 7 order by id desc";
-                        $d->query($sql_quangcao);
-                        $result_quangcao=$d->result_array(); ?>
+                    $d->reset();
+                    $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 order by id desc limit 1";
+                    $d->query($sql_quangcao);
+                    $result_quangcao=$d->result_array(); ?>
 
-                        <ul class="foter_ul">
-                            <?php if(!empty($result_quangcao)){
-                                for($j=0,$count_cc=count($result_quangcao);$j<$count_cc;$j++){ ?>
-                                    <li>
-                                        <a href="<?=$result_quangcao[$j]['link']?>">
-                                            <img src="<?=_upload_duan_l.$result_quangcao[$j]['photo']?>" height="27" width="92">
-                                        </a>
-                                    </li>
-                                <?php }}?>
-                        </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <?php
-                        $d->reset();
-                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt >=7 and stt<=12 order by id desc";
-                        $d->query($sql_quangcao);
-                        $result_quangcao1=$d->result_array(); ?>
-
-                        <ul class="foter_ul">
-                            <?php if(!empty($result_quangcao1)){
-                                for($j=0,$count_cc=count($result_quangcao1);$j<$count_cc;$j++){ ?>
-                                    <li>
-                                        <a href="<?=$result_quangcao1[$j]['link']?>">
-                                            <img src="<?=_upload_duan_l.$result_quangcao1[$j]['photo']?>" height="27" width="92">
-                                        </a>
-                                    </li>
-                                <?php }}?>
-                        </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <?php
-                        $d->reset();
-                        $sql_quangcao="select id,link,photo from #_quangcao where hienthi=1 and stt>12 and stt<19 order by id desc";
-                        $d->query($sql_quangcao);
-                        $result_quangcao2=$d->result_array(); ?>
-
-                        <ul class="foter_ul">
-                            <?php if(!empty($result_quangcao2)){
-                                for($j=0,$count_cc=count($result_quangcao2);$j<$count_cc;$j++){ ?>
-                                    <li>
-                                        <a href="<?=$result_quangcao2[$j]['link']?>">
-                                            <img src="<?=_upload_duan_l.$result_quangcao2[$j]['photo']?>" height="27" width="92">
-                                        </a>
-                                    </li>
-                                <?php }}?>
-                        </ul>
+                    <ul class="foter_ul">
+                        <?php if(!empty($result_quangcao)){
+                            for($j=0,$count_cc=count($result_quangcao);$j<$count_cc;$j++){ ?>
+                                <li>
+                                    <a href="<?=$result_quangcao[$j]['link']?>">
+                                        <img src="<?=_upload_duan_l.$result_quangcao[$j]['photo']?>">
+                                    </a>
+                                </li>
+                            <?php }}?>
+                    </ul>
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
