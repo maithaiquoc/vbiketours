@@ -264,7 +264,7 @@ function get_main_item()
 
     <br />
 
-	<b>Photo:</b> <input type="file" name="file" />Width: 120px - Height: 80px <?=_news_type?><br /><br />
+	<b>Photo:</b> <input type="file" name="file" />Width: 150px - Height: 85px <?=_news_type?><br /><br />
 
 	<b>Title</b> <input type="text" name="ten_vi" id="ten_vi" value="<?=@$item['ten_vi']?>" class="input" /><br />
 
